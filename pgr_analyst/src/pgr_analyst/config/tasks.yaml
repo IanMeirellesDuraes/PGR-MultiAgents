@@ -1,17 +1,80 @@
-research_task:
+select_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is 2024.
+    Analise o pdf recebido de um documento PGR e identifique as seções na qual se trata do inventario de riscos e extraia todas as informações
+    que se aplicam nesse anexo. Lembrando que em um inventario de risco são tratados termos como: riscos, perigos, medidas de controle, danos, 
+    descrição do agente, tipo de risco, gravidade, grupos de risco, niveis de risco, tipo de exposição e termos semelhantes a este.
+    Sua função é pegar essas informações e montar um resumo de como esta o padrão usado no documento para informar as informações presentes no inventário de risco.
+    Cuidado com a formatacao do pdf pois havera troca de paginas durante os tópicos no pdf.
   expected_output: >
-    A list with 7 bullet points of the most relevant information about {topic}
-  agent: researcher
+    Resumo de como é o padrão utilizado para tratar as informações presentes no inventario de riscos. Formate a respota em markdown, não utilize ``` para formatação.	
+    Exemplo de estrutura:
+    - Grupos de Riscos:
+      - xxx 
+      - xxx
+      - xxx
+      - xxx
+      - xxx
+    - Grupos de Risco se tiver presente:
+      - ghe_01: x
+      - ghe_02: x
+    - Tipos de risco:
+      - Físico: x
+      - Químico: x
+      - Biológico: x
+      - Ergonômico: x
+      - Acidentes: x
+    - Níveis de risco:
+      - x
+      - x
+      - x
+      - x
+      - x
+    Faça algo parecido mas somente com informações presentes no PDF, não use informações que não estão presentes no documento.
+  agent: PgrExpert
 
-reporting_task:
-  description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information. Translate this report for portuguese brazil.
-  expected_output: >
-    A fully fledge reports with the mains topics, each with a full section of information.
-    Formatted as markdown without '```', in portuguese brazil.
-  agent: reporting_analyst
+#ghedetector_task:
+ # description: >
+  #  Analise o pdf recebido de um docuemnto PGR e identifique se há a utilização de GHE (Grupo Homogêneo de Exposição) ou não.
+   # Lembrando que o GHE é um grupo de trabalhadores que possuem exposição semelhante a um agente de risco.
+    #Cuidado com a formatação do pdf pois haverá troca de páginas durante uma seção.
+ # expected_output: >
+  #  Caso tenha encontrado GHE, retorne todos os grupos encontrados e seus integrantes de forma organizada, caso contrário retorne 'Não foi encontrado GHE'.
+  #agent: GheDetector
+
+#riskanalyst_task:
+ # description: >
+  #  Analise o pdf recebido de um docuemnto PGR e identifique os níveis de riscos presentes no documento.
+   # Lembrando que os níveis de riscos são classificados em: Risco Insignificante, Risco Baixo, Risco Médio, Risco Alto e Risco Muito Alto na maioria dos casos,
+   # caso não seja essa classificação, será uma nomeclatura semelhante.
+   # Lembre sempre de assemelhar cada cor de risco com seu respectivo nível.
+   # Cuidado com a formatação do pdf pois haverá troca de páginas durante uma seção.
+  #expected_output: >
+   # Retorne os níveis de riscos encontrados no documento de forma organizada com suas respectivas cores sinalizadas.
+  #agent: RiskAnalyst
+
+#riskdescription_task:
+ # description: >
+  #  Analise o pdf recebido de um docuemnto PGR e identifique as descrições e tipos de riscos presentes no documento.
+   # Lembrando que as descrições e tipos de riscos são classificados em: Riscos Físicos, Riscos Químicos, Riscos Biológicos, Riscos Ergonômicos e Riscos de Acidentes na maioria dos casos,
+   # caso não seja essa classificação, será uma nomeclatura semelhante.
+   # Cuidado com a formatação do pdf pois haverá troca de páginas durante uma seção.
+ # expected_output: >
+  #  Retorne as descrições e tipos de riscos encontrados no documento de forma organizada.
+  #agent: RiskDescription
+
+#dataorganizer_task:
+ # description: >
+ #   Organize os dados recebidos de forma cronológica.
+  #  Lembre-se de organizar os dados de forma correta de acordo com o necessário para ter uma boa visão do documento analisado.
+   # Sempre siga um padrão de organização para que os dados sejam facilmente compreendidos.
+  #expected_output: >
+  #  Retorne os dados organizados de forma correta e cronológica, sendo algo desta forma:
+   # - GHE e Cargo respectivo ou caso não tenha GHE apenas o cargo;
+    # - Tipo de risco;
+    #  - Descrição do risco;
+    #   - Nível de risco;
+    # - Tipo de risco2;
+    #  - Descrição do risco2;
+    #   - Nível de risco2;
+    #- E assim por diante.
+  #agent: DataOrganizer

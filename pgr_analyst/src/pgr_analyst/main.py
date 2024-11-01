@@ -2,19 +2,12 @@
 import sys
 from pgr_analyst.crew import PgrAnalystCrew
 
-# This main file is intended to be a way for you to run your
-# crew locally, so refrain from adding unnecessary logic into this file.
-# Replace with inputs you want to test with, it will automatically
-# interpolate any tasks and agents information
 
 def run():
     """
     Run the crew.
     """
-    inputs = {
-        'topic': 'Cruzeiro esporte clube'
-    }
-    PgrAnalystCrew().crew().kickoff(inputs=inputs)
+    PgrAnalystCrew().crew().kickoff()
 
 
 def train():

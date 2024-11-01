@@ -1,18 +1,25 @@
-from typing import Type
+import PyPDF2
 from crewai_tools import BaseTool
 from pydantic import BaseModel, Field
 
-class MyCustomToolInput(BaseModel):
-    """Input schema for MyCustomTool."""
-    argument: str = Field(..., description="Description of the argument.")
+class SimplePDFSearchTool(BaseTool):
+    name: str = "Simple PDF Search Tool"
+    description: str = "Search for specific terms in a PDF document and extract text containing those terms."
+    pdf_path: str = Field(..., description="The path to the PDF file to search.")
 
-class MyCustomTool(BaseTool):
-    name: str = "Name of my tool"
-    description: str = (
-        "Clear description for what this tool is useful for, you agent will need this information to use it."
-    )
-    args_schema: Type[BaseModel] = MyCustomToolInput
+    def _run(self, query: str) -> str:
+        results = []
+        try:
+            with open(self.pdf_path, 'rb') as file:
+                reader = PyPDF2.PdfReader(file)
+                for page_number, page in enumerate(reader.pages):
+                    text = page.extract_text()
+                    if query.lower() in text.lower():
+                        results.append(f"Page {page_number + 1}: {text}")
+            return "\n\n".join(results) if results else "No matches found."
+        except Exception as e:
+            return f"An error occurred: {str(e)}"
 
-    def _run(self, argument: str) -> str:
-        # Implementation goes here
-        return "this is an example of a tool output, ignore it and move along."
+    def run(self, query: str) -> str:
+        return self._run(query)
+    

@@ -1,42 +1,27 @@
 from crewai import Agent, Crew, Process, Task
-from crewai.project import CrewBase, agent, crew, task
-
-# Uncomment the following line to use an example of a custom tool
-# from pgr_analyst.tools.custom_tool import MyCustomTool
-
-# Check our tools documentations for more information on how to use them
-# from crewai_tools import SerperDevTool
+from crewai.project import CrewBase, agent, crew, task, tool
+from pgr_analyst.tools.custom_tool import SimplePDFSearchTool
+from pydantic import BaseModel, Field
 
 @CrewBase
 class PgrAnalystCrew():
 	"""PgrAnalyst crew"""
 
 	@agent
-	def researcher(self) -> Agent:
+	def PgrExpert(self) -> Agent:
+		pdf_search_tool = SimplePDFSearchTool(pdf_path="pgr_analyst/path/pgr.pdf")
+		#pdf_search = pdf_search_tool.run("risco, inventário de risco, nível de risco, agente causador, ghe, grupos homogêneos de exposição, função, cargo, descrição do agente, médio, baixo")
 		return Agent(
-			config=self.agents_config['researcher'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
-			verbose=True
-		)
-
-	@agent
-	def reporting_analyst(self) -> Agent:
-		return Agent(
-			config=self.agents_config['reporting_analyst'],
+			config=self.agents_config['PgrExpert'],
+			tools=[pdf_search_tool],
 			verbose=True
 		)
 
 	@task
-	def research_task(self) -> Task:
+	def select_task(self) -> Task:
 		return Task(
-			config=self.tasks_config['research_task'],
-		)
-
-	@task
-	def reporting_task(self) -> Task:
-		return Task(
-			config=self.tasks_config['reporting_task'],
-			output_file='report.md'
+			config=self.tasks_config['select_task'],
+			output_file='select.md'
 		)
 
 	@crew
