@@ -14,11 +14,8 @@ def train():
     """
     Train the crew for a given number of iterations.
     """
-    inputs = {
-        "topic": "Cruzeiro esporte clube"
-    }
     try:
-        PgrAnalystCrew().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
+        PgrAnalystCrew().crew().train(n_iterations=4, filename="pgr_analyst")
 
     except Exception as e:
         raise Exception(f"An error occurred while training the crew: {e}")
@@ -45,3 +42,14 @@ def test():
 
     except Exception as e:
         raise Exception(f"An error occurred while replaying the crew: {e}")
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "train":
+            train()
+        elif sys.argv[1] == "replay":
+            replay()
+        elif sys.argv[1] == "test":
+            test()
+    else:
+        run()

@@ -1,56 +1,84 @@
-select_task:
-  description: >
-    Analise o pdf recebido de um documento PGR e identifique as seções na qual se trata do inventario de riscos e extraia todas as informações
-    que se aplicam nesse anexo. Lembrando que em um inventario de risco são tratados termos como: riscos, perigos, medidas de controle, danos, 
-    descrição do agente, tipo de risco, gravidade, grupos de risco, niveis de risco, tipo de exposição e termos semelhantes a este.
-    Sua função é pegar essas informações e montar um resumo de como esta o padrão usado no documento para informar as informações presentes no inventário de risco.
-    Cuidado com a formatacao do pdf pois havera troca de paginas durante os tópicos no pdf.
-  expected_output: >
-    Resumo de como é o padrão utilizado para tratar as informações presentes no inventario de riscos. Formate a respota em markdown, não utilize ``` para formatação.	
-    Exemplo de estrutura:
-    - Grupos de Riscos:
-      - xxx 
-      - xxx
-      - xxx
-      - xxx
-      - xxx
-    - Grupos de Risco se tiver presente:
-      - ghe_01: x
-      - ghe_02: x
-    - Tipos de risco:
-      - Físico: x
-      - Químico: x
-      - Biológico: x
-      - Ergonômico: x
-      - Acidentes: x
-    - Níveis de risco:
-      - x
-      - x
-      - x
-      - x
-      - x
-    Faça algo parecido mas somente com informações presentes no PDF, não use informações que não estão presentes no documento.
-  agent: PgrExpert
+#select_task:
+ # description: >
+  #  Analise o JSON recebido de um documento PGR e identifique as seções na qual se trata do inventario de riscos e extraia todas as informações
+   # que se aplicam nesse anexo. Lembrando que em um inventario de risco na maioria das vezes são tratados termos nomeados como: riscos, perigos, medidas de controle, danos, 
+    #descrição do agente, tipo de risco, gravidade, grupos de risco, niveis de risco, tipo de exposição, ou podem ser usados outras nomenclaturas para esses termos.
+ #   Sua função é pegar essas informações e montar um resumo de como esta o padrão usado no documento para informar as informações presentes no inventário de risco.
+  #  Lembre que esse JSON é a descrição de um arquivo.
+  #expected_output: >
+    # Retorne um resumo de como está o padrão usado no documento para informar as informações presentes no inventário de risco.
+    #Exemplo de estrutura:
+    #- Grupos de Riscos:
+    #  - xxx 
+    #  ...
+    #- Grupos de Risco se tiver presente:
+     # - ghe_01: x
+      #...
+    #- Tipos de risco:
+     # - Físico: x
+    #  ...
+    #- Níveis de risco:
+     # - Baixo: x
+     # ...
+   # Faça algo parecido mas somente com informações presentes no JSON, não use informações que não estão presentes no arquivo.
+ # agent: PgrExpert
 
 #ghedetector_task:
- # description: >
-  #  Analise o pdf recebido de um docuemnto PGR e identifique se há a utilização de GHE (Grupo Homogêneo de Exposição) ou não.
-   # Lembrando que o GHE é um grupo de trabalhadores que possuem exposição semelhante a um agente de risco.
-    #Cuidado com a formatação do pdf pois haverá troca de páginas durante uma seção.
- # expected_output: >
-  #  Caso tenha encontrado GHE, retorne todos os grupos encontrados e seus integrantes de forma organizada, caso contrário retorne 'Não foi encontrado GHE'.
+  #description: >
+    #Analise o JSON recebido de um docuemnto PGR e identifique se há a utilização de GHE (Grupo Homogêneo de Exposição) ou não.
+    #Lembrando que o GHE é um grupo de trabalhadores que possuem exposição semelhante a um agente de risco, mas nem sempre pode ser nomeado de GHE.
+    #Cuidado com a formatação do JSON pois haverá troca de páginas no documento que causa a quebra de seções. E também será utilizado muitas vezes tabelas no arquivo original que quando passado para JSON pode ser quebrado.
+    #Lembre que quase sempre terá mais de um GHE, então sempre busque se há mais de um GHE presente.
+  #expected_output: >
+    #Caso tenha encontrado GHE, retorne TODOS os grupos encontrados e seus integrantes de forma organizada, caso contrário retorne 'Não foi encontrado GHE'. 
+    #Cuidado sempre para pegar todos os grupos presentes referentes a GHE (Grupo de cargos Homogêneos de Exposição). Apontando principalmente o setor e todos os cargos que estão incluidos se houver descrição dos mesmos.
+    #Exemplo de resposta com informações fictícias:
+    #- GHE 01:
+      #- Setor: Produção
+        #- Cargo: Operador de Máquinas
+        #- Cargo: Auxiliar de Produção
+    #- GHE 02:
+      #- Setor: Administrativo
+        #- Cargo: Auxiliar Administrativo
+        #- Cargo: Secretária
   #agent: GheDetector
 
-#riskanalyst_task:
- # description: >
-  #  Analise o pdf recebido de um docuemnto PGR e identifique os níveis de riscos presentes no documento.
-   # Lembrando que os níveis de riscos são classificados em: Risco Insignificante, Risco Baixo, Risco Médio, Risco Alto e Risco Muito Alto na maioria dos casos,
-   # caso não seja essa classificação, será uma nomeclatura semelhante.
-   # Lembre sempre de assemelhar cada cor de risco com seu respectivo nível.
-   # Cuidado com a formatação do pdf pois haverá troca de páginas durante uma seção.
-  #expected_output: >
-   # Retorne os níveis de riscos encontrados no documento de forma organizada com suas respectivas cores sinalizadas.
-  #agent: RiskAnalyst
+ghedetector_task:
+  description: >
+    Analise o PDF recebido de um docuemnto PGR e identifique se há a utilização de GHE (Grupo Homogêneo de Exposição) ou não.
+    Lembrando que o GHE é um grupo de trabalhadores que possuem exposição semelhante a um agente de risco, mas nem sempre pode ser nomeado de GHE.
+    Cuidado com a formatação do PDF pois haverá troca de páginas no documento que causa a quebra de seções. E também será utilizado muitas vezes tabelas no arquivo original que quando extraído pode ser quebrado.
+    Lembre que quase sempre terá mais de um GHE, então sempre busque se há mais de um GHE presente.
+  expected_output: >
+    Caso tenha encontrado GHE, retorne TODOS os grupos encontrados e seus integrantes de forma organizada, caso contrário retorne 'Não foi encontrado GHE'. 
+    Cuidado sempre para pegar todos os grupos presentes referentes a GHE (Grupo de cargos Homogêneos de Exposição). Apontando principalmente o setor e todos os cargos que estão incluidos se houver descrição dos mesmos.
+    Exemplo de resposta com informações fictícias:
+    - GHE 01:
+      - Setor: Produção
+        - Cargo: Operador de Máquinas
+        - Cargo: Auxiliar de Produção
+    - GHE 02:
+      - Setor: Administrativo
+        - Cargo: Auxiliar Administrativo
+        - Cargo: Secretária
+  agent: GheDetector
+
+riskanalyst_task:
+  description: >
+    Analise o PDF recebido de um docuemnto PGR e identifique os níveis de riscos presentes no documento.
+    Lembrando que os níveis de riscos são classificados em: Risco Insignificante, Risco Baixo, Risco Médio, Risco Alto e Risco Muito Alto NA MAIORIA DOS CASOS,
+    caso não seja essa classificação, será uma nomeclatura semelhante!
+    Lembre sempre de assemelhar cada cor de risco com seu respectivo nível.
+    Cuidado com a formatação do pdf pois haverá troca de páginas durante uma seção.
+  expected_output: >
+    Retorne os níveis de riscos encontrados no documento de forma organizada com suas respectivas cores sinalizadas.
+    Exemplo de resposta com informações fictícias:
+    - Risco Insignificante: Azul
+    - Risco Baixo: Verde
+    - Risco Médio: Amarelo
+    - Risco Alto: Laranja
+    - Risco Muito Alto: Vermelho
+  agent: RiskAnalyst
 
 #riskdescription_task:
  # description: >

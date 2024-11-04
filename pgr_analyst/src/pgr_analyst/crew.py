@@ -1,36 +1,89 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task, tool
 from pgr_analyst.tools.custom_tool import SimplePDFSearchTool
+#from crewai_tools import PDFSearchTool
+#from crewai_tools import JSONSearchTool
 from pydantic import BaseModel, Field
 
 @CrewBase
 class PgrAnalystCrew():
 	"""PgrAnalyst crew"""
 
+	#@agent
+	#def PgrExpert(self) -> Agent:
+		#pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\ian\\Trabalho\\Analista-PGR\\pgr_analyst\\path\\pgr.pdf", query="ghe")
+		#return Agent(
+			#config=self.agents_config['PgrExpert'],
+			#tools=[pdf_search_tool],
+			#verbose=True
+		#)
+	
+	#@agent
+	#def PgrExpert(self) -> Agent:
+		#json_search_tool = JSONSearchTool(json_path="C:\\ian\\Trabalho\\Analista-PGR\\pgr_analyst\\path\\pgr3.json", search_query="ghe")
+		#return Agent(
+			#config=self.agents_config['PgrExpert'],
+			#tools=[json_search_tool],
+			#verbose=True
+		#)
+	
+
 	@agent
-	def PgrExpert(self) -> Agent:
-		pdf_search_tool = SimplePDFSearchTool(pdf_path="pgr_analyst/path/pgr.pdf")
-		#pdf_search = pdf_search_tool.run("risco, inventário de risco, nível de risco, agente causador, ghe, grupos homogêneos de exposição, função, cargo, descrição do agente, médio, baixo")
+	def GheDetector(self) -> Agent:
+		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\ian\\Trabalho\\Analista-PGR\\pgr_analyst\\path\\pgr.pdf", query="ghe")
 		return Agent(
-			config=self.agents_config['PgrExpert'],
+			config=self.agents_config['GheDetector'],
+			tools=[pdf_search_tool],
+			verbose=True
+		)
+	
+	@agent
+	def RiskAnalyst(self) -> Agent:
+		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\ian\\Trabalho\\Analista-PGR\\pgr_analyst\\path\\pgr.pdf", query="risco")
+		return Agent(
+			config=self.agents_config['RiskAnalyst'],
 			tools=[pdf_search_tool],
 			verbose=True
 		)
 
+	#@agent
+	#def GheDetector(self) -> Agent:
+		#json_search_tool = JSONSearchTool(pdf_path="C:\\ian\\Trabalho\\Analista-PGR\\pgr_analyst\\path\\pgr.pdf", query="ghe")
+		#return Agent(
+			#config=self.agents_config['GheDetector'],
+			#tools=[json_search_tool],
+			#verbose=True
+		#)
+
+
+
+	#@task
+	#def Select_Task(self) -> Task:
+		#return Task(
+			#config=self.tasks_config['select_task'],
+			#output_file='select.md'
+		#)
+	
 	@task
-	def select_task(self) -> Task:
+	def GheDetectorTask(self) -> Task:
 		return Task(
-			config=self.tasks_config['select_task'],
-			output_file='select.md'
+			config=self.tasks_config['ghedetector_task'],
+			output_file='ghe.md'
+		)
+	
+	@task
+	def RiskAnalyst_Task(self) -> Task:
+		return Task(
+			config=self.tasks_config['riskanalyst_task'],
+			output_file='risk.md'
 		)
 
 	@crew
 	def crew(self) -> Crew:
 		"""Creates the PgrAnalyst crew"""
 		return Crew(
-			agents=self.agents, # Automatically created by the @agent decorator
-			tasks=self.tasks, # Automatically created by the @task decorator
-			process=Process.sequential, # Default process
+			agents=self.agents, 
+			tasks=self.tasks, 
+			process=Process.sequential, 
 			verbose=True,
-			# process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/
 		)
