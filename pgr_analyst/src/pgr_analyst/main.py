@@ -15,7 +15,7 @@ def train():
     Train the crew for a given number of iterations.
     """
     try:
-        PgrAnalystCrew().crew().train(n_iterations=4, filename="pgr_analyst")
+        PgrAnalystCrew().crew().train(n_iterations=2, filename="pgr_analyst")
 
     except Exception as e:
         raise Exception(f"An error occurred while training the crew: {e}")

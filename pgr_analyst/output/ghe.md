@@ -1,0 +1,8 @@
+- GHE 01:
+  - Setor: Administrativo
+    - Cargo: Encarregado Geral
+- GHE 02:
+  - Setor: Operacional
+    - Cargo: Auxiliar em Refrigeração
+    - Cargo: Duteiro
+    - Cargo: Mecânico de Chiller

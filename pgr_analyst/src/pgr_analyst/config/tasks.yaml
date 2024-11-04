@@ -45,13 +45,13 @@
 
 ghedetector_task:
   description: >
-    Analise o PDF recebido de um docuemnto PGR e identifique se há a utilização de GHE (Grupo Homogêneo de Exposição) ou não.
+    Analise o pdf recebido de um docuemnto PGR e identifique se há a utilização de GHE (Grupo Homogêneo de Exposição) ou não.
     Lembrando que o GHE é um grupo de trabalhadores que possuem exposição semelhante a um agente de risco, mas nem sempre pode ser nomeado de GHE.
     Cuidado com a formatação do PDF pois haverá troca de páginas no documento que causa a quebra de seções. E também será utilizado muitas vezes tabelas no arquivo original que quando extraído pode ser quebrado.
     Lembre que quase sempre terá mais de um GHE, então sempre busque se há mais de um GHE presente.
   expected_output: >
     Caso tenha encontrado GHE, retorne TODOS os grupos encontrados e seus integrantes de forma organizada, caso contrário retorne 'Não foi encontrado GHE'. 
-    Cuidado sempre para pegar todos os grupos presentes referentes a GHE (Grupo de cargos Homogêneos de Exposição). Apontando principalmente o setor e todos os cargos que estão incluidos se houver descrição dos mesmos.
+    Cuidado sempre para pegar todos os grupos presentes referentes a GHE (Grupo de cargos Homogêneos de Exposição). Apontando principalmente o setor e todos os cargos que estão incluidos.
     Exemplo de resposta com informações fictícias:
     - GHE 01:
       - Setor: Produção
@@ -66,43 +66,68 @@ ghedetector_task:
 riskanalyst_task:
   description: >
     Analise o PDF recebido de um docuemnto PGR e identifique os níveis de riscos presentes no documento.
-    Lembrando que os níveis de riscos são classificados em: Risco Insignificante, Risco Baixo, Risco Médio, Risco Alto e Risco Muito Alto NA MAIORIA DOS CASOS,
-    caso não seja essa classificação, será uma nomeclatura semelhante!
-    Lembre sempre de assemelhar cada cor de risco com seu respectivo nível.
+    Lembrando que os níveis de riscos são classificados em: Risco Insignificante, Risco Baixo, Risco Medio, Risco Alto e Risco Muito Alto NA MAIORIA DOS CASOS,
+    caso não seja essa classificação, será uma nomeclatura semelhante, como risco irrelevante, risco crítico, entre outras palavras sinônimas!
     Cuidado com a formatação do pdf pois haverá troca de páginas durante uma seção.
   expected_output: >
-    Retorne os níveis de riscos encontrados no documento de forma organizada com suas respectivas cores sinalizadas.
-    Exemplo de resposta com informações fictícias:
+    Retorne os níveis de riscos encontrados no documento de forma organizada utilizando como padrão essas cores, lembre-se sempre de que caso encontre outra nomenclatura para algum
+    dos termos usados no exemplo de output, substitua corretamente, como por exemplo: "Risco Insignificante" por "Risco Irrelevante", "Muito alto" por "Crítico", "Risco Insignificante" por "Muito Baixo".
+    Exemplo de resposta com informações ficticias:
     - Risco Insignificante: Azul
     - Risco Baixo: Verde
-    - Risco Médio: Amarelo
+    - Risco Medio: Amarelo
     - Risco Alto: Laranja
     - Risco Muito Alto: Vermelho
   agent: RiskAnalyst
 
-#riskdescription_task:
- # description: >
-  #  Analise o pdf recebido de um docuemnto PGR e identifique as descrições e tipos de riscos presentes no documento.
-   # Lembrando que as descrições e tipos de riscos são classificados em: Riscos Físicos, Riscos Químicos, Riscos Biológicos, Riscos Ergonômicos e Riscos de Acidentes na maioria dos casos,
-   # caso não seja essa classificação, será uma nomeclatura semelhante.
-   # Cuidado com a formatação do pdf pois haverá troca de páginas durante uma seção.
- # expected_output: >
-  #  Retorne as descrições e tipos de riscos encontrados no documento de forma organizada.
-  #agent: RiskDescription
+riskdescription_task:
+  description: >
+    Analise o pdf recebido de um docuemnto PGR e identifique os tipos e grupos de riscos presentes no documento.
+    Lembrando que os grupos e tipos de riscos são classificados em: Riscos Físicos, Riscos Químicos, Riscos Biológicos, Riscos Ergonômicos e Riscos de Acidentes na maioria dos casos,
+    caso não seja essa classificação, será uma nomeclatura semelhante.
+    Cuidado com a formatação do pdf pois haverá troca de páginas durante uma seção.
+    vinculado a cargo
+  expected_output: >
+    Retorne os grupos e tipos de riscos encontrados no documento de forma organizada.
+    Utilize apenas as informações presentes no documento, não invente informações. 
+  agent: RiskDescription
 
-#dataorganizer_task:
- # description: >
- #   Organize os dados recebidos de forma cronológica.
-  #  Lembre-se de organizar os dados de forma correta de acordo com o necessário para ter uma boa visão do documento analisado.
-   # Sempre siga um padrão de organização para que os dados sejam facilmente compreendidos.
-  #expected_output: >
-  #  Retorne os dados organizados de forma correta e cronológica, sendo algo desta forma:
-   # - GHE e Cargo respectivo ou caso não tenha GHE apenas o cargo;
-    # - Tipo de risco;
-    #  - Descrição do risco;
-    #   - Nível de risco;
-    # - Tipo de risco2;
-    #  - Descrição do risco2;
-    #   - Nível de risco2;
-    #- E assim por diante.
-  #agent: DataOrganizer
+pgrexpert_task:
+  description: >
+    Entenda o padrão que esta sendo seguido no documento PGR de acordo com os dados fornecidos pelos outros agentes.
+    Lembre-se de organizar os dados de forma correta de acordo com o necessário para ter uma boa visão do documento analisado.
+    Sempre siga um padrão de organização para que os dados sejam facilmente compreendidos.
+    Você precisa extrair do documento, cada grupo de risco, descrição/tipo do risco e nível de risco que cada GHE possui. 
+    Você precisa apresentar as informações de TODOS os tipos de risco de cada grupo apontado pelo agente de descrição de riscos.
+  expected_output: >
+    Preciso de todos os tópicos do exemplo a seguir, e se houver mais de um GHE, repita o padrão para cada GHE. Lembrando que o exemplo é fictício e deve ser substituído pelos dados reais.
+    Tome cuidado com informações incompletas ou inventadas. É necessário que todos os dados sejam extraídos do documento e coerentes com as respotas dos outros agentes.
+    Exemplo de resposta com informações fictícias:
+      - GHE 01 - Administrativo:
+        - Cargos:
+          - Secretária;
+          - Encarregador geral;
+        - Tipo de risco:
+          - Risco ...:
+            - ...
+              - Nível de risco: ...;
+          - Risco ...:
+            - ...:
+              - Nível de risco: ...;
+          ...
+    
+      - GHE 02 - Produção:
+        - Cargos:
+          - Operador de máquinas;
+          - Auxiliar de produção;
+        - Tipo de risco:
+          - Risco ...:
+            - ...:
+              - Nível de risco: ...;
+            - ...:
+              - Nível de risco: ...;
+          - Risco ...;
+            - ...:
+              - Nível de risco: ...;
+          ...
+  agent: PgrExpert

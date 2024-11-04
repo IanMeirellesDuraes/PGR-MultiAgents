@@ -9,28 +9,9 @@ from pydantic import BaseModel, Field
 class PgrAnalystCrew():
 	"""PgrAnalyst crew"""
 
-	#@agent
-	#def PgrExpert(self) -> Agent:
-		#pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\ian\\Trabalho\\Analista-PGR\\pgr_analyst\\path\\pgr.pdf", query="ghe")
-		#return Agent(
-			#config=self.agents_config['PgrExpert'],
-			#tools=[pdf_search_tool],
-			#verbose=True
-		#)
-	
-	#@agent
-	#def PgrExpert(self) -> Agent:
-		#json_search_tool = JSONSearchTool(json_path="C:\\ian\\Trabalho\\Analista-PGR\\pgr_analyst\\path\\pgr3.json", search_query="ghe")
-		#return Agent(
-			#config=self.agents_config['PgrExpert'],
-			#tools=[json_search_tool],
-			#verbose=True
-		#)
-	
-
 	@agent
 	def GheDetector(self) -> Agent:
-		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\ian\\Trabalho\\Analista-PGR\\pgr_analyst\\path\\pgr.pdf", query="ghe")
+		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\Trabalho\PGR-MultiAgents\pgr_analyst\path\pgr.pdf", query="ghe")
 		return Agent(
 			config=self.agents_config['GheDetector'],
 			tools=[pdf_search_tool],
@@ -39,43 +20,57 @@ class PgrAnalystCrew():
 	
 	@agent
 	def RiskAnalyst(self) -> Agent:
-		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\ian\\Trabalho\\Analista-PGR\\pgr_analyst\\path\\pgr.pdf", query="risco")
+		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\Trabalho\\PGR-MultiAgents\\pgr_analyst\\path\\pgr.pdf", query="risco")
 		return Agent(
 			config=self.agents_config['RiskAnalyst'],
 			tools=[pdf_search_tool],
 			verbose=True
 		)
-
-	#@agent
-	#def GheDetector(self) -> Agent:
-		#json_search_tool = JSONSearchTool(pdf_path="C:\\ian\\Trabalho\\Analista-PGR\\pgr_analyst\\path\\pgr.pdf", query="ghe")
-		#return Agent(
-			#config=self.agents_config['GheDetector'],
-			#tools=[json_search_tool],
-			#verbose=True
-		#)
-
-
-
-	#@task
-	#def Select_Task(self) -> Task:
-		#return Task(
-			#config=self.tasks_config['select_task'],
-			#output_file='select.md'
-		#)
+	
+	@agent
+	def RiskDescription(self) -> Agent:
+		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\Trabalho\\PGR-MultiAgents\\pgr_analyst\\path\\pgr.pdf", query="risco")
+		return Agent(
+			config=self.agents_config['RiskDescription'],
+			tools=[pdf_search_tool],
+			verbose=True
+		)
+	
+	@agent 
+	def PgrExpert(self) -> Agent:
+		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\Trabalho\\PGR-MultiAgents\\pgr_analyst\\path\\pgr.pdf", query="risco")
+		return Agent(
+			config=self.agents_config['PgrExpert'],
+			tools=[pdf_search_tool],
+			verbose=True,
+		)
 	
 	@task
 	def GheDetectorTask(self) -> Task:
 		return Task(
 			config=self.tasks_config['ghedetector_task'],
-			output_file='ghe.md'
+			output_file='output\\ghe.md'
 		)
 	
 	@task
 	def RiskAnalyst_Task(self) -> Task:
 		return Task(
 			config=self.tasks_config['riskanalyst_task'],
-			output_file='risk.md'
+			output_file='output\\risk.md'
+		)
+	
+	@task
+	def RiskDescription_Task(self) -> Task:
+		return Task(
+			config=self.tasks_config['riskdescription_task'],
+			output_file='output\\risk_description.md'
+		)
+	
+	@task
+	def PgrExpert_Task(self) -> Task:
+		return Task(
+			config=self.tasks_config['pgrexpert_task'],
+			output_file='output\\pgr_expert.md'
 		)
 
 	@crew
