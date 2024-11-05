@@ -1,36 +1,32 @@
 - **GHE 01 - Administrativo:**
   - **Cargos:**
     - Encarregado Geral
-  - **Tipo de risco:**
-    - **Risco Físico:**
-      - Ruído:
-        - Nível de risco: Não significativo;
+  - **Tipo de Risco:**
     - **Risco Ergonômico:**
       - Trabalho em posturas incômodas ou pouco confortáveis:
-        - Nível de risco: Alto, Severos;
+        - Nível de risco: Alto (4C);
       - Sentado por longos períodos:
-        - Nível de risco: Alto, Severos;
+        - Nível de risco: Alto (4C);
       - Exigência de postura inadequada:
-        - Nível de risco: Médio, Severos;
-    - **Risco de Acidente:**
+        - Nível de risco: Médio (2C);
+    - **Risco de Acidentes:**
       - Queda:
-        - Nível de risco: Baixo, Preocupantes;
-
+        - Piso molhado:
+          - Nível de risco: Baixo (2B);
+  
 - **GHE 02 - Operacional:**
   - **Cargos:**
     - Auxiliar em Refrigeração
     - Duteiro
     - Mecânico de Chiller
-  - **Tipo de risco:**
+  - **Tipo de Risco:**
     - **Risco Químico:**
       - Produtos Químicos (Materiais de Limpeza):
-        - Nível de risco: Baixo, Preocupantes;
-      - Poeiras:
-        - Nível de risco: Baixo, Preocupantes;
+        - Nível de risco: Baixo (2B);
+      - Poeiras (Areia):
+        - Nível de risco: Baixo (2B);
     - **Risco Ergonômico:**
       - Trabalho em posturas incômodas ou pouco confortáveis:
-        - Nível de risco: Alto, Severos;
+        - Nível de risco: Alto (4C);
       - Postura em pé por longos períodos:
-        - Nível de risco: Alto, Severos;
-
-Note: No riscos biológicos, físicos, químicos não especificados em mais detalhes no documento, apenas os mencionados foram extraídos e organizados. As informações foram transcritas de acordo com o que estava no documento, assegurando que não houve adição de dados não presentes.
+        - Nível de risco: Alto (4C);

@@ -63,22 +63,22 @@ ghedetector_task:
         - Cargo: Secretária
   agent: GheDetector
 
-riskanalyst_task:
-  description: >
-    Analise o PDF recebido de um docuemnto PGR e identifique os níveis de riscos presentes no documento.
-    Lembrando que os níveis de riscos são classificados em: Risco Insignificante, Risco Baixo, Risco Medio, Risco Alto e Risco Muito Alto NA MAIORIA DOS CASOS,
-    caso não seja essa classificação, será uma nomeclatura semelhante, como risco irrelevante, risco crítico, entre outras palavras sinônimas!
-    Cuidado com a formatação do pdf pois haverá troca de páginas durante uma seção.
-  expected_output: >
-    Retorne os níveis de riscos encontrados no documento de forma organizada utilizando como padrão essas cores, lembre-se sempre de que caso encontre outra nomenclatura para algum
-    dos termos usados no exemplo de output, substitua corretamente, como por exemplo: "Risco Insignificante" por "Risco Irrelevante", "Muito alto" por "Crítico", "Risco Insignificante" por "Muito Baixo".
-    Exemplo de resposta com informações ficticias:
-    - Risco Insignificante: Azul
-    - Risco Baixo: Verde
-    - Risco Medio: Amarelo
-    - Risco Alto: Laranja
-    - Risco Muito Alto: Vermelho
-  agent: RiskAnalyst
+#riskanalyst_task:
+  #description: >
+    #Analise o PDF recebido de um docuemnto PGR e identifique os níveis de riscos presentes no documento.
+    #Lembrando que os níveis de riscos são classificados em: Risco Insignificante, Risco Baixo, Risco Medio, Risco Alto e Risco Muito Alto NA MAIORIA DOS CASOS,
+    #caso não seja essa classificação, será uma nomeclatura semelhante, como risco irrelevante, risco crítico, entre outras palavras sinônimas!
+    #Cuidado com a formatação do pdf pois haverá troca de páginas durante uma seção.
+  #expected_output: >
+    #Retorne os níveis de riscos encontrados no documento de forma organizada utilizando como padrão essas cores, lembre-se sempre de que caso encontre outra nomenclatura para algum
+    #dos termos usados no exemplo de output, substitua corretamente, como por exemplo: "Risco Insignificante" por "Risco Irrelevante", "Muito alto" por "Crítico", "Risco Insignificante" por "Muito Baixo".
+    #Exemplo de resposta com informações ficticias:
+    #- Risco Insignificante: Azul
+    #- Risco Baixo: Verde
+    #- Risco Medio: Amarelo
+    #- Risco Alto: Laranja
+    #- Risco Muito Alto: Vermelho
+  #agent: RiskAnalyst
 
 riskdescription_task:
   description: >
@@ -102,32 +102,34 @@ pgrexpert_task:
   expected_output: >
     Preciso de todos os tópicos do exemplo a seguir, e se houver mais de um GHE, repita o padrão para cada GHE. Lembrando que o exemplo é fictício e deve ser substituído pelos dados reais.
     Tome cuidado com informações incompletas ou inventadas. É necessário que todos os dados sejam extraídos do documento e coerentes com as respotas dos outros agentes.
-    Exemplo de resposta com informações fictícias:
-      - GHE 01 - Administrativo:
-        - Cargos:
-          - Secretária;
-          - Encarregador geral;
-        - Tipo de risco:
-          - Risco ...:
-            - ...
-              - Nível de risco: ...;
-          - Risco ...:
-            - ...:
-              - Nível de risco: ...;
-          ...
-    
-      - GHE 02 - Produção:
-        - Cargos:
-          - Operador de máquinas;
-          - Auxiliar de produção;
-        - Tipo de risco:
-          - Risco ...:
-            - ...:
-              - Nível de risco: ...;
-            - ...:
-              - Nível de risco: ...;
-          - Risco ...;
-            - ...:
-              - Nível de risco: ...;
-          ...
   agent: PgrExpert
+
+
+#Exemplo de resposta com informações fictícias:
+      #- GHE 01 - Administrativo:
+        #- Cargos:
+          #- Secretária;
+          #- Encarregador geral;
+        #- Tipo de risco:
+          #- Risco ...:
+            #- ...
+              #- Nível de risco: ...;
+          #- Risco ...:
+            #- ...:
+              #- Nível de risco: ...;
+          #...
+    
+      #- GHE 02 - Produção:
+        #- Cargos:
+          #- Operador de máquinas;
+          #- Auxiliar de produção;
+        #- Tipo de risco:
+          #- Risco ...:
+            #- ...:
+              #- Nível de risco: ...;
+            #- ...:
+              #- Nível de risco: ...;
+          #- Risco ...;
+            #- ...:
+              #- Nível de risco: ...;
+          #...
