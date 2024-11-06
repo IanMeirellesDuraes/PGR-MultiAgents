@@ -1,0 +1,18 @@
+ghedetector_task:
+  description: >
+    Analise o pdf recebido de um docuemnto PGR e identifique se há a utilização de GHE (Grupo Homogêneo de Exposição) ou não.
+    Lembrando que o GHE é um grupo de trabalhadores que possuem exposição semelhante a um agente de risco, mas nem sempre pode ser nomeado de GHE.
+    Cuidado com a formatação do PDF pois haverá troca de páginas no documento que causa a quebra de seções. E também será utilizado muitas vezes tabelas no arquivo original que quando extraído pode ser quebrado.
+    Lembre que quase sempre terá mais de um GHE, então sempre busque se há mais de um GHE presente.
+  expected_output: >
+    Caso tenha encontrado GHE, retorne TODOS os grupos encontrados e seus integrantes de forma organizada, caso não haja nada referente a ghe ou grupo homogêneo de exposição, retorne todos os cargos que foram citados no documento.
+    Cuidado sempre para pegar todos os grupos presentes referentes a GHE (Grupo de cargos Homogêneos de Exposição). Apontando principalmente o setor e todos os cargos que estão incluidos.
+    Preciso do número das páginas que foram encontradas as informações, quando a query for feita.
+  agent: GheDetector
+
+  #Exemplo de resposta com informações fictícias:
+    #ghes= {
+    #"GHE_01": ["Cargo 01", "Cargo 02", "Cargo 03"]
+    #"GHE_02": ["Cargo 04", "Cargo 05", "Cargo 06"]
+    #}
+    #ghe_pages = [1, 2, 3]

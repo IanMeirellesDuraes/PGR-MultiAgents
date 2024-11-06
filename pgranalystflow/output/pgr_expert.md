@@ -1,0 +1,39 @@
+- GHE 01 - Administrativo:
+  - Cargos:
+    - Encarregado Geral;
+  - Tipo de risco:
+    - Risco Físico:
+      - Ruído:
+        - Nível de risco: 1 (Muito baixo);
+      - Calor:
+        - Nível de risco: 1 (Muito baixo);
+      - Ergonomico:
+        - Exigência de postura inadequada:
+          - Nível de risco: 2 (Moderado);
+        - Trabalho em posturas incômodas:
+          - Nível de risco: 4 (Alto);
+      - Acidente:
+        - Queda em piso molhado:
+          - Nível de risco: 2 (Baixo);
+        
+- GHE 02 - Operacional:
+  - Cargos:
+    - Auxiliar em Refrigeração;
+    - Duti;
+    - Mecânico de Chiller;
+  - Tipo de risco:
+    - Risco Físico:
+      - Ruído:
+        - Nível de risco: 1 (Muito baixo);
+      - Calor:
+        - Nível de risco: 1 (Muito baixo);
+    - Risco Químico:
+      - Produtos químicos:
+        - Nível de risco: 2 (Moderado);
+      - Poeiras:
+        - Nível de risco: 2 (Baixo);
+    - Risco Ergonômico:
+      - Trabalho em posturas incômodas:
+        - Nível de risco: 4 (Alto);
+        
+Esta organização fornece uma visão clara dos riscos identificados para cada grupo homogêneo de exposição, conforme as informações extraídas do documento PGR.

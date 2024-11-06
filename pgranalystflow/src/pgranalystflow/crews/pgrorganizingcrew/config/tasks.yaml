@@ -1,0 +1,45 @@
+pgrexpert_task:
+  description: >
+    Entenda o padrão que esta sendo seguido no documento PGR de acordo com dados extraidos por outros agentes.
+    O padrão de GHE:
+    {ghes}
+
+    O padrão de riscos:
+    {risk_analysis}
+
+    Lembre-se de organizar os dados de forma correta de acordo com o necessário para ter uma boa visão do documento analisado.
+    Você precisa extrair do documento, cada grupo de risco, descrição/tipo do risco e nível de risco que cada GHE possui. 
+    Você precisa apresentar todos os grupos de risco, tipos de risco de cada grupo, niveis de risco para cada tipo, vinculados a cada GHE presente no dado de ghes fornecido.
+  expected_output: >
+    Preciso de todos os tópicos do exemplo a seguir, e se houver mais de um GHE, repita o padrão para cada GHE. Lembrando que o exemplo é fictício e deve ser substituído pelos dados reais.
+    Tome cuidado com informações incompletas ou inventadas. É necessário que todos os dados sejam extraídos do documento e coerentes com as respotas dos outros agentes.
+    Exemplo de resposta com informações fictícias:
+      - GHE 01 - ...:
+        - Cargos:
+          - ...;
+          - ...;
+        - Tipo de risco:
+          - Risco ...:
+            - ...
+              - Nível de risco: ...;
+          - Risco ...:
+            - ...:
+              - Nível de risco: ...;
+          ...
+    
+      - GHE 02 - ...:
+        - Cargos:
+          - ...;
+          - ...;
+        - Tipo de risco:
+          - Risco ...:
+            - ...:
+              - Nível de risco: ...;
+            - ...:
+              - Nível de risco: ...;
+          - Risco ...;
+            - ...:
+              - Nível de risco: ...;
+          ...
+  agent: PgrExpert
+
