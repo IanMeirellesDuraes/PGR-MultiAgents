@@ -1,0 +1,795 @@
+- GHE 01 - Setor:
+  - Tipo de agente (ou descrição do risco):
+    - Ergonômico:
+      - Descrição do agente (ou risco): Postura Sentada Por Longos Períodos;
+        - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+      - Descrição do agente (ou risco): Trabalho Intensivo Com Teclado Ou Outros Dispositivos De Entrada De Dados;
+        - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+      - Descrição do agente (ou risco): Situações De Sobrecarga De Trabalho Mental;
+        - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+      - Descrição do agente (ou risco): Layout Inadequado/ Piso Inadequado;
+        - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+    - Acidente:
+      - Descrição do agente (ou risco): Veículo Em Movimento;
+        - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+      - Descrição do agente (ou risco): Batida Contra;
+        - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+
+- GHE 02 - Setor:
+    - Tipo de agente (ou descrição do risco):
+      - Físico:
+        - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+      - Químico:
+        - Descrição do agente (ou risco): Óxido De Ferro;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Manganês;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Monóxido De Carbono;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+      - Ergonômico:
+        - Descrição do agente (ou risco): Deslocamento a pé frequente; 
+          - Nível de risco (ou classificação do risco): 2 TOLERÁVEL;
+        - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados; 
+          - Nível de risco (ou classificação do risco): 2 TOLERÁVEL;
+      - Acidente:
+        - Descrição do agente (ou risco): Trabalho em altura superior a 2m;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Piso Irregular;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Veículo em Movimento;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Aresta Cortante;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Batida Contra;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Líquido Inflamável;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Carga Suspensa;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Queda De Objeto;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Ar Comprimido;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Superfície Quente;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Áreas Classificadas;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+        - Descrição do agente (ou risco): Gases Inflamáveis;
+          - Nível de risco (ou classificação do risco): 3 MODERADO;
+
+- GHE 03 - Setor: CAMPO CEC **********
+  - Tipo de agente (ou descrição do risco):
+    - Físico:
+      - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Trabalho em altura superior a 2m;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Piso Irregular;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Veículo em Movimento;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Aresta Cortante;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Líquido Inflamável;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Carga Suspensa;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Queda De Objeto;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Gases Inflamáveis;
+        - Nível de risco (ou classificação do risco): Moderado;
+  
+    - Ergonômico:
+      - Descrição do agente (ou risco): Deslocamento a pé durante a jornada de trabalho;
+        - Nível de risco (ou classificação do risco): Tolerável;
+      - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos;
+        - Nível de risco (ou classificação do risco): Tolerável;
+
+    - Químico:
+      - Descrição do agente (ou risco): Óxido De Ferro;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Manganês;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Monóxido De Carbono;
+        - Nível de risco (ou classificação do risco): Moderado; 
+
+    - Acidente:
+      - Descrição do agente (ou risco): Espaço Confinado;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Batida Contra;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Ar Comprimido;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Superfície Quente;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Áreas Classificadas;
+        - Nível de risco (ou classificação do risco): Moderado;
+
+- GHE 04 - Setor: COQUERIA SEC  
+    - Tipo de agente (ou descrição do risco):  
+      - Físico:  
+        - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+        - Descrição do agente (ou risco): Trabalho em altura superior a 2m;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+        - Descrição do agente (ou risco): Piso Irregular;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+      - Químico:  
+        - Descrição do agente (ou risco): Óxido de Ferro;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+        - Descrição do agente (ou risco): Manganês;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+        - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+        - Descrição do agente (ou risco): Monóxido de Carbono;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+        - Descrição do agente (ou risco): Poeira de Carvão Betuminoso;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+        - Descrição do agente (ou risco): Benzeno;  ********
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+      - Acidente:  
+        - Descrição do agente (ou risco): Veículo em Movimento;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+        - Descrição do agente (ou risco): Queda de Objeto;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+        - Descrição do agente (ou risco): Líquido Inflamável;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+        - Descrição do agente (ou risco): Carga Suspensa;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+        - Descrição do agente (ou risco): Superfície Quente;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+        - Descrição do agente (ou risco): Gases Inflamáveis;  
+          - Nível de risco (ou classificação do risco): MODERADO (3);  
+      - Ergonômico:  
+        - Descrição do agente (ou risco): frequente deslocamento a pé durante a jornada de trabalho;  
+          - Nível de risco (ou classificação do risco): TOLERÁVEL (2);  
+        - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados;  
+          - Nível de risco (ou classificação do risco): TOLERÁVEL (2);
+
+- GHE 05 - Setor: Coqueria CEC  
+  - Tipo de agente (ou descrição do risco):  
+    - Físico:  
+      - Descrição do agente (ou risco): Ruído contínuo ou intermitente;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+    - Químico:  
+      - Descrição do agente (ou risco): Óxido de Ferro;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Manganês;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Monóxido de Carbono;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Poeira de Carvão Betuminoso;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Benzeno;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Tolueno (Toluol);  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Xileno (Xilol);  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Etilbenzeno;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+    - Ergonômico:  
+      - Descrição do agente (ou risco): Frequente deslocamento a pé durante a jornada de trabalho;  
+        - Nível de risco (ou classificação do risco): 2, Tolerável;  
+      - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados;  
+        - Nível de risco (ou classificação do risco): 2, Tolerável;  
+    - Acidente:  
+      - Descrição do agente (ou risco): Trabalho em altura superior a 2m;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Espaço Confinado;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Piso Irregular;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Veículo em Movimento;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Aresta Cortante;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Batida Contra;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Líquido Inflamável;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Carga Suspensa;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Queda De Objeto;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Ar Comprimido;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Superfície Quente;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Áreas Classificadas;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;  
+      - Descrição do agente (ou risco): Gases Inflamáveis;  
+        - Nível de risco (ou classificação do risco): 3, Moderado;
+
+- GHE 06 - Setor:
+    - Tipo de agente (ou descrição do risco):
+      - Físico:
+        - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente; 
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Riscos elétricos; 
+          - Nível de risco (ou classificação do risco): MODERADO;
+      - Químico:
+        - Descrição do agente (ou risco): Óxido De Ferro; 
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Manganês; 
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira; 
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Monóxido De Carbono; 
+          - Nível de risco (ou classificação do risco): MODERADO;  
+      - Ergonômico:
+        - Descrição do agente (ou risco): Frequente deslocamento a pé durante a jornada de trabalho; 
+          - Nível de risco (ou classificação do risco): TOLERÁVEL;  
+        - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados; 
+          - Nível de risco (ou classificação do risco): TOLERÁVEL;  
+      - Acidente:
+        - Descrição do agente (ou risco): Trabalho em altura superior a 2m; 
+          - Nível de risco (ou classificação do risco): MODERADO;  
+        - Descrição do agente (ou risco): Espaço Confinado; 
+          - Nível de risco (ou classificação do risco): MODERADO;  
+        - Descrição do agente (ou risco): Veículo em Movimento; 
+          - Nível de risco (ou classificação do risco): MODERADO;  
+        - Descrição do agente (ou risco): Aresta Cortante; 
+          - Nível de risco (ou classificação do risco): MODERADO;  
+        - Descrição do agente (ou risco): Queda De Objeto; 
+          - Nível de risco (ou classificação do risco): MODERADO;  
+        - Descrição do agente (ou risco): Superfície Quente; 
+          - Nível de risco (ou classificação do risco): MODERADO;  
+        - Descrição do agente (ou risco): Líquido Inflamável; 
+          - Nível de risco (ou classificação do risco): MODERADO;  
+        - Descrição do agente (ou risco): Carga Suspensa; 
+          - Nível de risco (ou classificação do risco): MODERADO; 
+        - Descrição do agente (ou risco): Gases Inflamáveis; 
+          - Nível de risco (ou classificação do risco): MODERADO;
+
+- GHE 07 - Setor:
+  - Tipo de agente (ou descrição do risco):
+    - Físico:
+      - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Piso Irregular;
+        - Nível de risco (ou classificação do risco): MODERADO;
+    - Químico:
+      - Descrição do agente (ou risco): Óxido De Ferro;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Manganês;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Monóxido De Carbono;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Poeira de Carvão Betuminoso;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Benzeno;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Tolueno (Toluol);
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Xileno (Xilol);
+        - Nível de risco (ou classificação do risco): MODERADO;
+    - Ergonômico:
+      - Descrição do agente (ou risco): Frequente deslocamento a pé durante a jornada de trabalho;
+        - Nível de risco (ou classificação do risco): TOLERÁVEL;
+      - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados;
+        - Nível de risco (ou classificação do risco): TOLERÁVEL;
+    - Acidente:
+      - Descrição do agente (ou risco): Trabalho em altura superior a 2m;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Espaço Confinado;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Riscos Elétricos;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Veículo em Movimento;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Aresta Cortante;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Queda De Objeto;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Carga Suspensa;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Batida Contra;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Líquido Inflamável;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Superfície Quente;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Gases Inflamáveis;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Ar Comprimido;
+        - Nível de risco (ou classificação do risco): MODERADO;
+
+- GHE 08 - Saúde:
+    - Tipo de agente (ou descrição do risco):
+      - Ergonômico:
+        - Descrição do agente (ou risco): Postura Sentada Por Longos Períodos;
+          - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+        - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados;
+          - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+        - Descrição do agente (ou risco): Situações De Sobrecarga De Trabalho Mental;
+          - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+      - Acidente:
+        - Descrição do agente (ou risco): Veículo Em Movimento;
+          - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+        - Descrição do agente (ou risco): Batida Contra;
+          - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+      - Ergonômico:
+        - Descrição do agente (ou risco): Layout Inadequado/ Piso Inadequado;
+          - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+
+- GHE 09 - Motoristas:
+    - Tipo de agente (ou descrição do risco):
+      - Ergonômico:
+        - Descrição do agente (ou risco): Postura Sentada Por Longos Períodos;
+          - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+      - Acidente:
+        - Descrição do agente (ou risco): Veículo Em Movimento;
+          - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+        - Descrição do agente (ou risco): Batida Contra;
+          - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+      - Ergonômico:
+        - Descrição do agente (ou risco): Layout Inadequado/ Piso Inadequado;
+          - Nível de risco (ou classificação do risco): TOLERÁVEL B;
+
+- GHE 10 - Setor:
+  - Tipo de agente (ou descrição do risco):
+    - Físico:
+      - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;
+        - Nível de risco (ou classificação do risco): Moderado;
+    - Químico:
+      - Descrição do agente (ou risco): Óxido De Ferro;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Manganês;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Monóxido De Carbono;
+        - Nível de risco (ou classificação do risco): Moderado;
+    - Ergonômico:
+      - Descrição do agente (ou risco): deslocamento a pé durante a jornada de trabalho;
+        - Nível de risco (ou classificação do risco): Tolerável;
+      - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados;
+        - Nível de risco (ou classificação do risco): Tolerável;
+    - Acidente:
+      - Descrição do agente (ou risco): Piso Irregular;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Veículo em Movimento;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Aresta Cortante;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Batida Contra;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Líquido Inflamável;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Carga Suspensa;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Queda De Objeto;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Ar Comprimido;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Superfície Quente;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Áreas Classificadas;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Gases Inflamáveis;
+        - Nível de risco (ou classificação do risco): Moderado;
+
+- GHE 11 - Setor:  
+  - Tipo de agente (ou descrição do risco):  
+    - Físico:  
+      - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Piso Irregular;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+    - Químico:  
+      - Descrição do agente (ou risco): Óxido De Ferro;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Manganês;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Monóxido De Carbono;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Poeira de Carvão Betuminoso;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Benzeno;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Tolueno (Toluol);  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Xileno (Xilol);  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+    - Ergonômico:  
+      - Descrição do agente (ou risco): frequente deslocamento a pé durante a jornada de trabalho;  
+        - Nível de risco (ou classificação do risco): TOLERÁVEL;  
+      - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados;  
+        - Nível de risco (ou classificação do risco): TOLERÁVEL;  
+    - Acidente:  
+      - Descrição do agente (ou risco): Veículo em Movimento;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Aresta Cortante;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Batida Contra;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Queda De Objeto;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Carga Suspensa;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Líquido Inflamável;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Superfície Quente;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Gases Inflamáveis;  
+        - Nível de risco (ou classificação do risco): MODERADO;  
+      - Descrição do agente (ou risco): Ar Comprimido;  
+        - Nível de risco (ou classificação do risco): MODERADO;
+
+- GHE 12 - Setor:
+  - Tipo de agente (ou descrição do risco):
+    - Físico:
+      - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Exposição a altas tensões;
+        - Nível de risco (ou classificação do risco): MODERADO;
+    - Químico:
+      - Descrição do agente (ou risco): Óxido De Ferro;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Manganês;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Monóxido De Carbono;
+        - Nível de risco (ou classificação do risco): MODERADO;
+    - Ergonômico:
+      - Descrição do agente (ou risco): frequência de deslocamento a pé durante a jornada de trabalho;
+        - Nível de risco (ou classificação do risco): TOLERÁVEL;
+      - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados;
+        - Nível de risco (ou classificação do risco): TOLERÁVEL;
+    - Acidente:
+      - Descrição do agente (ou risco): Riscos Elétricos;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Piso Irregular;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Veículo em Movimento;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Aresta Cortante;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Batida Contra;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Líquido Inflamável;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Carga Suspensa;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Queda De Objeto;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Superfície Quente;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Gases Inflamáveis;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Ar Comprimido;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Áreas Classificadas;
+        - Nível de risco (ou classificação do risco): MODERADO;
+
+- GHE 13 - Setor:
+    - Tipo de agente (ou descrição do risco):
+      - Físico:
+        - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;
+          - Nível de risco (ou classificação do risco): MODERADO;
+      - Químico:
+        - Descrição do agente (ou risco): Óxido De Ferro;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Manganês;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Monóxido De Carbono;
+          - Nível de risco (ou classificação do risco): MODERADO;
+      - Ergonômico:
+        - Descrição do agente (ou risco): frequente deslocamento a pé durante a jornada de trabalho;
+          - Nível de risco (ou classificação do risco): TOLERÁVEL;
+        - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados;
+          - Nível de risco (ou classificação do risco): TOLERÁVEL;
+      - Acidente:
+        - Descrição do agente (ou risco): Espaço Confinado;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Riscos Elétricos;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Piso Irregular;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Veículo em Movimento;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Aresta Cortante;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Batida Contra;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Líquido Inflamável;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Carga Suspensa;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Queda De Objeto;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Ar Comprimido;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Superfície Quente;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Áreas Classificadas;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Gases Inflamáveis;
+          - Nível de risco (ou classificação do risco): MODERADO;
+
+- GHE 14 - Setor:
+  - Tipo de agente (ou descrição do risco):
+    - Físico:
+      - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Riscos Elétricos;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Piso Irregular;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Veículo em Movimento;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Aresta Cortante;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Batida Contra;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Líquido Inflamável;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Carga Suspensa;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Queda De Objeto;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Ar Comprimido;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Superfície Quente;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Áreas Classificadas;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Gases Inflamáveis;
+        - Nível de risco (ou classificação do risco): MODERADO;
+    - Químico:
+      - Descrição do agente (ou risco): Óxido De Ferro;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Manganês;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Monóxido De Carbono;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Poeira de Carvão Betuminoso;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Benzeno;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Tolueno (Toluol);
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Xileno (Xilol);
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Etilbenzeno;
+        - Nível de risco (ou classificação do risco): MODERADO;
+    - Ergonômico:
+      - Descrição do agente (ou risco): Frequente deslocamento a pé durante a jornada de trabalho;
+        - Nível de risco (ou classificação do risco): TOLERÁVEL;
+      - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados;
+        - Nível de risco (ou classificação do risco): TOLERÁVEL;
+    - Acidente:
+      - Descrição do agente (ou risco): Riscos Elétricos;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Piso Irregular;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Veículo em Movimento;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Aresta Cortante;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Batida Contra;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Líquido Inflamável;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Carga Suspensa;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Queda De Objeto;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Ar Comprimido;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Superfície Quente;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Áreas Classificadas;
+        - Nível de risco (ou classificação do risco): MODERADO;
+      - Descrição do agente (ou risco): Gases Inflamáveis;
+        - Nível de risco (ou classificação do risco): MODERADO;
+
+- GHE 15 - Setor:
+    - Tipo de agente (ou descrição do risco):
+      - Físico:
+        - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;
+          - Nível de risco (ou classificação do risco): Moderado;
+      - Químico:
+        - Descrição do agente (ou risco): Óxido De Ferro;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Manganês;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Monóxido De Carbono;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Poeira de Carvão Betuminoso;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Benzeno;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Tolueno (Toluol);
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Xileno (Xilol);
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Etilbenzeno;
+          - Nível de risco (ou classificação do risco): Moderado;
+      - Ergonômico:
+        - Descrição do agente (ou risco): Frequente deslocamento a pé durante a jornada de trabalho;
+          - Nível de risco (ou classificação do risco): Tolerável;
+        - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados;
+          - Nível de risco (ou classificação do risco): Tolerável;
+      - Acidente:
+        - Descrição do agente (ou risco): Espaço Confinado;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Riscos Elétricos;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Piso Irregular;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Veículo em Movimento;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Aresta Cortante;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Batida Contra;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Líquido Inflamável;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Carga Suspensa;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Queda De Objeto;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Ar Comprimido;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Superfície Quente;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Áreas Classificadas;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Gases Inflamáveis;
+          - Nível de risco (ou classificação do risco): Moderado;
+
+- GHE 16 - Setor:
+  - Tipo de agente (ou descrição do risco):
+    - Físico:
+      - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;
+        - Nível de risco (ou classificação do risco): Moderado;
+    - Químico:
+      - Descrição do agente (ou risco): Óxido De Ferro;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Manganês;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Monóxido De Carbono;
+        - Nível de risco (ou classificação do risco): Moderado;
+    - Ergonômico:
+      - Descrição do agente (ou risco): Deslocamento a pé durante a jornada de trabalho;
+        - Nível de risco (ou classificação do risco): Tolerável;
+      - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados;
+        - Nível de risco (ou classificação do risco): Tolerável;
+    - Acidente:
+      - Descrição do agente (ou risco): Espaço Confinado;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Piso Irregular;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Veículo em Movimento;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Aresta Cortante;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Batida Contra;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Líquido Inflamável;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Carga Suspensa;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Queda De Objeto;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Ar Comprimido;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Superfície Quente;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Áreas Classificadas;
+        - Nível de risco (ou classificação do risco): Moderado;
+      - Descrição do agente (ou risco): Gases Inflamáveis;
+        - Nível de risco (ou classificação do risco): Moderado;
+
+- GHE 17 - Setor:
+    - Tipo de agente (ou descrição do risco):
+      - Físico:
+        - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Espaço Confinado;
+          - Nível de risco (ou classificação do risco): Moderado;
+      - Químico:
+        - Descrição do agente (ou risco): Óxido De Ferro;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Manganês;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Monóxido De Carbono;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Poeira de Carvão Betuminoso;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Benzeno;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Tolueno;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Xileno;
+          - Nível de risco (ou classificação do risco): Moderado;
+      - Ergonômico:
+        - Descrição do agente (ou risco): frequente deslocamento a pé durante a jornada de trabalho;
+          - Nível de risco (ou classificação do risco): Tolerável;
+        - Descrição do agente (ou risco): Trabalho Intensivo com teclado ou outros dispositivos de entrada de dados;
+          - Nível de risco (ou classificação do risco): Tolerável;
+      - Acidente:
+        - Descrição do agente (ou risco): Piso Irregular;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Veículo em Movimento;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Aresta Cortante;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Batida Contra;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Líquido Inflamável;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Carga Suspensa;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Queda De Objeto;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Ar Comprimido;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Superfície Quente;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Áreas Classificadas;
+          - Nível de risco (ou classificação do risco): Moderado;
+        - Descrição do agente (ou risco): Gases Inflamáveis;
+          - Nível de risco (ou classificação do risco): Moderado;
+
+- GHE 18 - Setor:
+    - Tipo de agente (ou descrição do risco):
+      - Físico:
+        - Descrição do agente (ou risco): Ruído Contínuo ou Intermitente;
+          - Nível de risco (ou classificação do risco): MODERADO;
+      - Químico:
+        - Descrição do agente (ou risco): Óxido De Ferro;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Manganês;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): PNOS - Partículas não especificadas de outra maneira;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Monóxido De Carbono;
+          - Nível de risco (ou classificação do risco): MODERADO;
+      - Acidente:
+        - Descrição do agente (ou risco): Piso Irregular;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Veículo em Movimento;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Aresta Cortante;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Batida Contra;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Carga Suspensa;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Queda De Objeto;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Ar Comprimido;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Superfície Quente;
+          - Nível de risco (ou classificação do risco): MODERADO;
+      - Ergonômico:
+        - Descrição do agente (ou risco): Trabalho Intensivo Com Teclado Ou Outros Dispositivos De Entrada De Dados;
+          - Nível de risco (ou classificação do risco): MODERADO;
+        - Descrição do agente (ou risco): Frequente Deslocamento A Pé Durante A Jornada De Trabalho;
+          - Nível de risco (ou classificação do risco): MODERADO;
+

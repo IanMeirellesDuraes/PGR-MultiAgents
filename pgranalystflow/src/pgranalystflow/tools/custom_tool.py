@@ -28,31 +28,25 @@ class SimplePDFSearchTool(BaseTool):
 #print(SimplePDFSearchTool(pdf_path="C:\ian\Trabalho\Analista-PGR\pgr_analyst\path\pgr2.pdf", query="ian").run())
 
 
+import PyPDF2
+from crewai_tools import BaseTool
+from pydantic import Field
 
-from typing import Type, List
-import openai
+class SimplePDFSearchTool2(BaseTool):
+    name: str = "Simple PDF Search Tool"
+    description: str = "Busca por termos específicos em um documento PDF e extrai o texto que contém esses termos."
+    pdf_path: str = Field(..., description="O caminho para o arquivo PDF que será pesquisado")  
 
-class ImageAnalysisTool(BaseTool):
-    name: str = "Multi-Image Focused Analysis Tool"
-    description: str = (
-        "This tool analyzes multiple images using OpenAI's Vision API, focusing on a specific aspect or object. "
-        "It takes in a list of image paths and a focus parameter to guide the analysis (e.g., 'detect objects', "
-        "'analyze lighting conditions', 'identify people')."
-    )
-
-    def _run(self, image_paths: List[str], focus: str) -> str:
+    def _run(self, query: str) -> str:
         results = []
-        for img_path in image_paths:
-            try:
-                analysis = self._analyze_image(img_path, focus)
-                results.append(analysis)
-            except Exception as e:
-                results.append(f"Error analyzing {img_path}: {str(e)}")
-        return results
-
-    def _analyze_image(self, image_path: str, focus: str) -> dict:
-        with open(image_path, "rb") as image_file:
-            response = openai.Vision.create(file=image_file, query=focus)
-        return response.get("data", {})
-
+        try:
+            with open(self.pdf_path, 'rb') as file:
+                reader = PyPDF2.PdfReader(file)
+                for page_number, page in enumerate(reader.pages):
+                    text = page.extract_text()
+                    if query.lower() in text.lower():
+                        results.append(f"Página {page_number + 1}: {text}")
+            return "\n\n".join(results) if results else "Nenhuma correspondência encontrada."
+        except Exception as e:
+            return f"Erro ao processar o PDF: {str(e)}"
 

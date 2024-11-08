@@ -1,1 +1,0 @@
-Awaiting further content or instructions for the extraction of GHE risk information.

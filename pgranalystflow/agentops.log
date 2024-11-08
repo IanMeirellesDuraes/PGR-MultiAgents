@@ -1,0 +1,471 @@
+2024-11-08 19:17:36,664 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=bbeec8e8-f830-43c9-b16c-09e4b48246b0
+2024-11-08 19:18:25,505 - INFO - Session Stats - Duration: 47.1s | Cost: $0.017330 | LLMs: 3 | Tools: 1 | Actions: 0 | Errors: 0
+2024-11-08 19:18:25,505 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=bbeec8e8-f830-43c9-b16c-09e4b48246b0
+2024-11-08 19:18:25,520 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:18:25,532 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:18:26,777 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:18:44,658 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:18:44,658 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:18:52,485 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:18:59,658 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:18:59,699 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:18:59,699 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:18:59,704 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:18:59,704 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:19:01,091 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:19:20,328 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:19:20,340 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:19:20,340 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:19:33,959 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:19:46,075 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:19:46,188 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:19:46,188 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:19:46,188 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:19:46,196 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:19:46,196 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:19:47,075 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:20:05,715 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:20:05,715 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:20:05,715 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:20:05,715 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:20:21,931 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:20:35,503 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:20:35,576 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:20:35,576 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:20:35,576 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:20:35,579 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:20:35,583 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:20:35,583 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:20:36,772 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:20:56,120 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:20:56,120 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:20:56,120 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:20:56,120 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:20:56,120 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:21:13,303 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:21:24,151 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:21:24,211 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:21:24,211 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:21:24,211 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:21:24,214 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:21:24,214 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:21:24,218 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:21:24,218 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:21:25,897 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:21:44,195 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:21:44,195 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:21:44,195 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:21:44,195 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:21:44,195 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:21:44,195 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:22:00,726 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:22:15,048 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:22:15,149 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:15,149 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:15,149 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:15,149 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:15,149 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:15,149 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:22:15,156 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:22:15,156 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:22:15,983 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:22:34,121 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:34,121 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:34,121 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:34,121 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:34,121 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:34,121 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:34,121 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:22:46,678 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:22:58,367 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:22:58,455 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:58,455 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:58,455 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:58,455 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:58,455 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:58,461 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:22:58,462 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:22:58,464 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:22:58,464 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:22:59,703 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:23:18,444 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:18,444 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:18,444 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:18,453 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:18,454 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:18,454 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:18,454 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:18,455 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:23:33,052 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:23:45,750 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:23:45,936 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:45,936 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:45,936 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:45,936 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:45,936 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:45,936 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:45,936 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:23:45,943 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:23:45,951 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:23:45,951 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:23:47,807 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:24:06,858 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:06,858 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:06,858 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:06,858 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:06,858 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:06,858 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:06,858 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:06,858 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:06,858 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:24:14,891 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:24:24,359 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:24:24,410 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:24,410 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:24,410 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:24,414 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:24,414 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:24,414 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:24,415 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:24,415 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:24,415 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:24:24,419 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:24:24,422 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:24:25,395 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:24:44,933 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:44,933 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:44,933 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:44,933 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:44,933 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:44,933 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:44,933 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:44,933 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:44,933 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:44,948 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:24:49,213 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:24:52,756 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:24:52,795 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:52,795 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:52,797 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:52,797 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:52,797 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:52,797 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:52,797 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:52,798 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:52,798 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:24:52,798 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:24:52,801 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:24:52,801 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:24:53,873 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:25:13,598 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:13,598 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:13,598 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:13,598 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:13,598 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:13,598 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:13,598 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:13,598 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:13,598 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:13,598 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:13,598 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:25:23,796 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:25:32,383 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:25:32,429 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:32,429 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:32,429 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:32,436 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:32,439 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:32,439 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:32,439 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:32,439 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:32,439 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:32,439 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:32,439 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:25:32,446 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:25:32,446 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:25:33,831 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:25:53,320 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:53,320 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:53,320 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:53,320 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:53,320 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:53,320 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:53,320 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:53,320 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:53,320 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:53,320 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:53,320 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:25:53,320 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:26:05,836 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:26:17,726 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:26:17,806 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:17,806 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:17,806 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:17,806 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:17,806 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:17,806 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:17,806 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:17,806 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:17,806 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:17,806 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:17,806 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:17,806 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:26:17,812 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:26:17,812 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:26:19,008 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:26:39,703 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:39,703 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:39,703 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:39,703 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:39,703 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:39,703 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:39,703 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:39,703 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:39,703 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:39,703 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:39,703 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:39,703 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:26:39,703 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:26:54,485 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:27:04,516 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:27:04,701 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:04,701 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:04,701 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:04,701 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:04,701 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:04,701 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:04,701 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:04,701 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:04,701 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:04,701 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:04,701 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:04,701 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:04,701 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:27:04,711 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:27:04,711 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:27:05,757 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:23,802 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:27:34,635 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:27:45,381 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:27:45,459 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,459 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,460 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,461 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,461 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,461 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,462 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,463 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,468 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,469 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,469 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,469 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,470 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:27:45,470 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:27:45,471 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:27:45,477 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:27:46,521 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,279 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:04,290 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:28:17,846 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:28:28,295 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:28:28,388 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,388 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,394 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,397 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,397 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,397 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,399 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,400 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,400 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,400 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,400 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,400 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,400 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,403 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:28,403 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:28:28,415 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:28:28,417 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:28:29,345 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:28:47,877 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,877 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,877 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,877 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,877 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,877 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,877 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,877 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,877 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,877 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,884 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,904 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,904 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,904 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,904 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:28:47,904 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:29:03,510 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:29:15,292 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:29:15,410 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,410 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,416 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,416 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,416 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,418 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,418 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,418 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,418 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,418 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,418 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,418 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,418 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,418 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,418 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:15,418 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:29:15,428 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:29:15,432 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:29:16,560 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:29:35,244 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:29:51,244 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:30:02,607 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:30:02,692 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,692 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,692 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,698 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,698 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,698 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,699 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,699 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,699 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,699 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,699 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,699 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,699 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,699 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,699 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,699 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:02,699 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:30:02,711 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:30:02,711 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:30:03,611 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:22,522 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:30:40,294 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:30:58,202 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:30:58,306 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,306 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,306 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,306 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,306 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,306 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,306 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,310 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,310 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,312 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,312 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,312 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,312 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,312 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,312 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,312 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,314 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:30:58,314 - WARNING - Could not end session - no sessions detected
+2024-11-08 19:30:58,323 - WARNING - Error: 'NoneType' object has no attribute 'create_agent'
+2024-11-08 19:30:58,326 - WARNING - Failed to track an agent with the @track_agent decorator.
+2024-11-08 19:30:59,854 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:17,886 - WARNING - Could not record event - no sessions detected. Create a session by calling agentops.start_session()
+2024-11-08 19:31:26,440 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:31:36,509 - ERROR - Could not record event. Start a session by calling agentops.start_session().
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,689 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,705 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,705 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,705 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,706 - WARNING - Failed to track an agent None with the @track_agent decorator.
+2024-11-08 19:31:36,706 - WARNING - Could not end session - no sessions detected
