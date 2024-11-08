@@ -3,7 +3,7 @@ from pdf2image import convert_from_path
 from PyPDF2 import PdfReader
 
 # Caminho para o arquivo PDF
-pdf_path = 'C:\\Trabalho\\PGR-MultiAgents\\pgr_analyst\\path\\pgr.pdf'
+pdf_path = 'C:\\Trabalho\\PGR-MultiAgents\\pgr_analyst\\imgs\\pgr-brmed2.pdf'
 
 # Diretório onde as imagens serão salvas
 output_dir = 'C:\\Trabalho\\PGR-MultiAgents\\pgr_analyst\\imgs\\pgr'
