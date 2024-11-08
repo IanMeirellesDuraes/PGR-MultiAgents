@@ -1,12 +1,13 @@
 riskdescription_task:
   description: >
-    Analise o pdf recebido de um docuemnto PGR e identifique os tipos e grupos de riscos presentes no documento.
-    Lembrando que os grupos de risco são classificados em: Riscos Físicos, Riscos Químicos, Riscos Biológicos, Riscos Ergonômicos e Riscos de Acidentes na maioria dos casos,
-    Já os tipos de risco, são originados dos grupos de risco, como por exemplo: Risco de ruído, Risco de vibração, Risco de poeira, Risco de postura inadequada, Risco de queda, entre outros.
+    Analise o pdf recebido de um docuemnto PGR e identifique os tipos de agente (ou descrição do risco) e os tipos de risco (ou descrição do agente) presentes no documento.
+    Lembrando que os os tipos de agente (ou descrição do risco) são na maioria dos casos classificados em: Riscos Físicos, Riscos Químicos, Riscos Biológicos, Riscos Ergonômicos e Riscos de Acidentes.
+    Já os tipos de risco (ou descrição do agente), são originados dos grupos de risco, como por exemplo: Risco de ruído, Risco de vibração, Risco de poeira, Risco de postura inadequada, Risco de queda, entre outros.
     caso não seja essa classificação, será uma nomeclatura semelhante.
     Cuidado com a formatação do pdf pois haverá troca de páginas durante uma seção. Podendo causar a quebra de tabelas e informações.
   expected_output: >
-    Retorne os grupos e tipos de riscos encontrados no documento de forma organizada.
-    Lembre-se de retornar apenas os tipos e grupos de risco que estão associados a algum setor/caargo/ghe.
+    Retorne os grupos e tipos de riscos encontrados no documento.
+    Todas as informações estarão em tabelas no documento original.
+    Fique SEMPRE atento ao cabeçalho de cada tabela, pois nele estará o nome do GHE e o setor ao qual ele pertence. O que fará você saber a qual ghe as informações abaixo pertencem.
     Utilize apenas as informações presentes no documento, não invente informações. 
   agent: RiskDescription

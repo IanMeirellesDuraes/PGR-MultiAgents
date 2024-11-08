@@ -6,7 +6,7 @@ from pgranalystflow.tools.custom_tool import SimplePDFSearchTool
 class PgrOrganizingCrew():
 	@agent 
 	def PgrExpert(self) -> Agent:
-		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\Trabalho\\PGR-MultiAgents\\pgranalystflow\\path\\pgr.pdf", query="risco")
+		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\Trabalho\\PGR-MultiAgents\\pgranalystflow\\path\\pgr-brmed2.pdf", query="RECONHECIMENTO DOS RISCOS OCUPACIONAIS ")
 		return Agent(
 			config=self.agents_config['PgrExpert'],
 			tools=[pdf_search_tool],

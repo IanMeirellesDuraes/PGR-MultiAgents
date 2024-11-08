@@ -4,15 +4,15 @@ from pgranalystflow.tools.custom_tool import SimplePDFSearchTool
 from pydantic import BaseModel, Field, RootModel
 from typing import Dict, Optional, List, Set, Tuple
 
-class GheInfo(BaseModel):
-	ghes: Dict[str, list] = Field(..., default_factory=dict, description="Ghes encontrados no documento, onde a chave é o ghe correspondente e o valor é os cargos associados ao respectivo ghe")
-	ghes_pages: List[int] = Field(..., description="Páginas em que os ghes foram encontrados")
+#class GheInfo(BaseModel):
+	#ghes: Dict[str, list] = Field(..., default_factory=dict, description="Ghes encontrados no documento, onde a chave é o ghe correspondente e o valor é os cargos associados ao respectivo ghe")
+	#ghes_pages: List[int] = Field(..., description="Páginas em que os ghes foram encontrados")
 
 @CrewBase
 class GheAnalystCrew():
 	@agent
 	def GheDetector(self) -> Agent:
-		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\Trabalho\\PGR-MultiAgents\\pgranalystflow\\path\\pgr.pdf", query="ghe")
+		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\Trabalho\\PGR-MultiAgents\\pgranalystflow\\path\\pgr-brmed2.pdf", query="DESCRIÇÃO DE ATIVIDADE")
 		return Agent(
 			config=self.agents_config['GheDetector'],
 			tools=[pdf_search_tool],
@@ -23,7 +23,7 @@ class GheAnalystCrew():
 		return Task(
 			config=self.tasks_config['ghedetector_task'],
 			output_file='output\\ghe.md',
-			output_pydantic=GheInfo,
+			#output_pydantic=GheInfo,
 		)
 	
 	@crew

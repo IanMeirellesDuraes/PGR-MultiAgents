@@ -2,11 +2,12 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task, tool
 from pgranalystflow.tools.custom_tool import SimplePDFSearchTool
 
+
 @CrewBase
 class RiskAnalystCrew():
 	@agent
 	def RiskDescription(self) -> Agent:
-		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\Trabalho\\PGR-MultiAgents\\pgranalystflow\\path\\pgr.pdf", query="risco")
+		pdf_search_tool = SimplePDFSearchTool(pdf_path="C:\\Trabalho\\PGR-MultiAgents\\pgranalystflow\\path\\pgr-brmed2.pdf", query="RECONHECIMENTO DOS RISCOS OCUPACIONAIS ")
 		return Agent(
 			config=self.agents_config['RiskDescription'],
 			tools=[pdf_search_tool],

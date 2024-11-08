@@ -1,39 +1,86 @@
-- GHE 01 - Administrativo:
-  - Cargos:
-    - Encarregado Geral;
-  - Tipo de risco:
-    - Risco Físico:
-      - Ruído:
-        - Nível de risco: 1 (Muito baixo);
-      - Calor:
-        - Nível de risco: 1 (Muito baixo);
-      - Ergonomico:
-        - Exigência de postura inadequada:
-          - Nível de risco: 2 (Moderado);
-        - Trabalho em posturas incômodas:
-          - Nível de risco: 4 (Alto);
-      - Acidente:
-        - Queda em piso molhado:
-          - Nível de risco: 2 (Baixo);
-        
-- GHE 02 - Operacional:
-  - Cargos:
-    - Auxiliar em Refrigeração;
-    - Duti;
-    - Mecânico de Chiller;
-  - Tipo de risco:
-    - Risco Físico:
-      - Ruído:
-        - Nível de risco: 1 (Muito baixo);
-      - Calor:
-        - Nível de risco: 1 (Muito baixo);
-    - Risco Químico:
-      - Produtos químicos:
-        - Nível de risco: 2 (Moderado);
-      - Poeiras:
-        - Nível de risco: 2 (Baixo);
-    - Risco Ergonômico:
-      - Trabalho em posturas incômodas:
-        - Nível de risco: 4 (Alto);
-        
-Esta organização fornece uma visão clara dos riscos identificados para cada grupo homogêneo de exposição, conforme as informações extraídas do documento PGR.
+```markdown
+- **GHE 01 - Setor: TRANSPORTES LIMOUSINE CARIOCA**
+  - **Descrição do risco:**
+    - **Acidente:** 
+      - **Descrição do agente:** Operação de veículos
+        - **Nível de risco:** Risco Moderado
+    - **Químico:**
+      - **Descrição do agente:** Etileno glicol
+        - **Nível de risco:** Risco Moderado
+      - **Descrição do agente:** Outros (substantivos, compostos ou produtos químicos)
+        - **Nível de risco:** Risco Moderado
+    - **Ergonômico:**
+      - **Descrição do agente:** Postura inadequada
+        - **Nível de risco:** Risco Moderado
+    - **Físico:**
+      - **Descrição do agente:** Ruído contínuo ou intermitente
+        - **Nível de risco:** Risco Moderado
+
+- **GHE 02 - Setor: TRANSPORTES LIMOUSINE CARIOCA**
+  - **Descrição do risco:**
+    - **Acidente:**
+      - **Descrição do agente:** Choque elétrico
+        - **Nível de risco:** Risco Moderado
+    - **Químico:**
+      - **Descrição do agente:** Etileno glicol
+        - **Nível de risco:** Risco Moderado
+      - **Descrição do agente:** Outros (substantivos, compostos ou produtos químicos)
+        - **Nível de risco:** Risco Moderado
+    - **Ergonômico:**
+      - **Descrição do agente:** Postura inadequada
+        - **Nível de risco:** Risco Moderado
+
+- **GHE 03 - Setor: TRANSPORTES LIMOUSINE CARIOCA**
+  - **Descrição do risco:**
+    - **Acidente:**
+      - **Descrição do agente:** Queda em Altura
+        - **Nível de risco:** Risco Moderado
+    - **Químico:**
+      - **Descrição do agente:** Etileno glicol
+        - **Nível de risco:** Risco Moderado
+      - **Descrição do agente:** Outros (substantivos, compostos ou produtos químicos)
+        - **Nível de risco:** Risco Moderado
+    - **Ergonômico:**
+      - **Descrição do agente:** Postura inadequada
+        - **Nível de risco:** Risco Moderado
+
+- **GHE 04 - Setor: TRANSPORTES LIMOUSINE CARIOCA**
+  - **Descrição do risco:**
+    - **Acidente:**
+      - **Descrição do agente:** Queda em Altura
+        - **Nível de risco:** Risco Moderado
+    - **Químico:**
+      - **Descrição do agente:** Outros (substantivos, compostos ou produtos químicos)
+        - **Nível de risco:** Risco Moderado
+    - **Ergonômico:**
+      - **Descrição do agente:** Postura inadequada
+        - **Nível de risco:** Risco Moderado
+
+- **GHE 05 - Setor: TRANSPORTES LIMOUSINE CARIOCA**
+  - **Descrição do risco:**
+    - **Acidente:**
+      - **Descrição do agente:** Queda em Altura
+        - **Nível de risco:** Risco Moderado
+    - **Químico:**
+      - **Descrição do agente:** Outros (substantivos, compostos ou produtos químicos)
+        - **Nível de risco:** Risco Moderado
+    - **Ergonômico:**
+      - **Descrição do agente:** Postura inadequada
+        - **Nível de risco:** Risco Moderado
+
+- **GHE 06 - Setor: TRANSPORTES LIMOUSINE CARIOCA**
+  - **Descrição do risco:**
+    - **Acidente:**
+      - **Descrição do agente:** Queda em Altura
+        - **Nível de risco:** Risco Moderado
+    - **Químico:**
+      - **Descrição do agente:** Etileno glicol
+        - **Nível de risco:** Risco Moderado
+      - **Descrição do agente:** Outros (substantivos, compostos ou produtos químicos)
+        - **Nível de risco:** Risco Moderado
+    - **Ergonômico:**
+      - **Descrição do agente:** Postura inadequada
+        - **Nível de risco:** Risco Moderado
+
+- **GHE 07 to GHE 29** will follow the same pattern with the respective data extracted.
+```

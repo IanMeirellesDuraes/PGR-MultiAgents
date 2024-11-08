@@ -6,6 +6,7 @@ from crewai.flow.flow import listen, start, and_, or_, router
 from .crews.gheanalystcrew.gheanalystcrew_crew import GheAnalystCrew
 from .crews.pgrorganizingcrew.pgrorganizingcrew_crew import PgrOrganizingCrew
 from .crews.riskanalystcrew.riskanalystcrew_crew import RiskAnalystCrew
+from .crews.visioncrew.visioncrew_crew import VisioncrewCrew
 
 class PgrAnalystFlow(Flow):
 	@start()
@@ -25,12 +26,21 @@ class PgrAnalystFlow(Flow):
 		risk_analysis = riskanalystcrew.crew().kickoff()
 		self.risk_analysis = risk_analysis
 	
+	#@listen(and_(GheDetector, RiskDescription))
+	#def VisionReview(self):
+		#visionanalystcrew = VisionAnalystCrew()
+		#vision_analysis = visionanalystcrew.crew().kickoff(inputs={image_path_url: f"C:\Trabalho\PGR-MultiAgents\pgr_analyst\imgs\pgr\pagina_{self.ghes}.png"})
+
 	@listen(and_(GheDetector, RiskDescription))
 	def PgrDescription(self):
 		pgrorganizingcrew = PgrOrganizingCrew()
-		pgr_structure = pgrorganizingcrew.crew().kickoff(inputs={"ghes": self.ghes, "risk_analysis": self.risk_analysis})
-		return pgr_structure
+		pgr_structure = pgrorganizingcrew.crew().kickoff()
+		print(pgr_structure)
 
+	@listen(PgrDescription)
+	def VisionReview(self):
+		visionanalystcrew = VisioncrewCrew()
+		vision_analysis = visionanalystcrew.crew().kickoff(inputs={"image_path_url": f"C:\Trabalho\PGR-MultiAgents\pgranalystflow\path\pagina_135.png"})
 
 def kickoff():
     flow = PgrAnalystFlow()
