@@ -544,7 +544,7 @@ wheels = [
 
 [[package]]
 name = "crewai"
-version = "0.76.9"
+version = "0.79.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "appdirs" },
@@ -569,9 +569,9 @@ dependencies = [
     { name = "tomli-w" },
     { name = "uv" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/be/48/1da2b22e559adce6f472514d3c823b4fee0503df1fc60d35f52a80c39b88/crewai-0.76.9.tar.gz", hash = "sha256:f4a162032b92cfa9533bf112aca4ad6013e152322da71f495e53570fa76eb367", size = 5827747 }
+sdist = { url = "https://files.pythonhosted.org/packages/02/aa/0e4cd62d4060477b5529f68e6cf81513bf67e7c291ded2c8f53e21982ac6/crewai-0.79.4.tar.gz", hash = "sha256:9ffc32f68ec3ff31e72f971d21b220946debb5d52c890afd19dddf09ad632f13", size = 5837990 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d1/05/64bc840704fd77e9801942aa1e761927e736889e6a84cad8dbc06d8c9042/crewai-0.76.9-py3-none-any.whl", hash = "sha256:d2e26ecd570cca341171158e9d4ce00cb96ccc53e8df54f69247b6d7b34c7d70", size = 191177 },
+    { url = "https://files.pythonhosted.org/packages/79/1b/0dfa5968cc01646f72e0c851fe01a94979a449905471a4467ab02eb147b4/crewai-0.79.4-py3-none-any.whl", hash = "sha256:2236e471a17a3712005f7b590e6f5b627652153d0b16104ffc4747f45e8f6a48", size = 197411 },
 ]
 
 [package.optional-dependencies]
@@ -581,7 +581,7 @@ tools = [
 
 [[package]]
 name = "crewai-tools"
-version = "0.13.4"
+version = "0.14.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "beautifulsoup4" },
@@ -599,9 +599,9 @@ dependencies = [
     { name = "requests" },
     { name = "selenium" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/64/bd/eff7b633a0b28ff4ed115adde1499e3dcc683e4f0b5c378a4c6f5c0c1bf6/crewai_tools-0.13.4.tar.gz", hash = "sha256:b6ac527633b7018471d892c21ac96bc961a86b6626d996b1ed7d53cd481d4505", size = 816588 }
+sdist = { url = "https://files.pythonhosted.org/packages/9b/6d/4fa91b481b120f83bb58f365203d8aa8564e8ced1035d79f8aedb7d71e2f/crewai_tools-0.14.0.tar.gz", hash = "sha256:510f3a194bcda4fdae4314bd775521964b5f229ddbe451e5d9e0216cae57f4e3", size = 815892 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6c/40/93cd347d854059cf5e54a81b70f896deea7ad1f03e9c024549eb323c4da5/crewai_tools-0.13.4-py3-none-any.whl", hash = "sha256:eda78fe3c4df57676259d8dd6b2610fa31f89b90909512f15893adb57fb9e825", size = 463703 },
+    { url = "https://files.pythonhosted.org/packages/c8/ed/9f4e64e1507062957b0118085332d38b621c1000874baef2d1c4069bfd97/crewai_tools-0.14.0-py3-none-any.whl", hash = "sha256:0a804a828c29869c3af3253f4fc4c3967a3f80f06dab22e9bbe9526608a31564", size = 462980 },
 ]
 
 [[package]]
@@ -1512,14 +1512,14 @@ wheels = [
 
 [[package]]
 name = "jedi"
-version = "0.19.1"
+version = "0.19.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "parso" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d6/99/99b493cec4bf43176b678de30f81ed003fd6a647a301b9c927280c600f0a/jedi-0.19.1.tar.gz", hash = "sha256:cf0496f3651bc65d7174ac1b7d043eff454892c708a87d1b683e57b569927ffd", size = 1227821 }
+sdist = { url = "https://files.pythonhosted.org/packages/72/3a/79a912fbd4d8dd6fbb02bf69afd3bb72cf0c729bb3063c6f4498603db17a/jedi-0.19.2.tar.gz", hash = "sha256:4770dc3de41bde3966b02eb84fbcf557fb33cce26ad23da12c742fb50ecb11f0", size = 1231287 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/20/9f/bc63f0f0737ad7a60800bfd472a4836661adae21f9c2535f3957b1e54ceb/jedi-0.19.1-py2.py3-none-any.whl", hash = "sha256:e983c654fe5c02867aef4cdfce5a2fbb4a50adc0af145f70504238f18ef5e7e0", size = 1569361 },
+    { url = "https://files.pythonhosted.org/packages/c0/5a/9cac0c82afec3d09ccd97c8b6502d48f165f9124db81b4bcb90b4af974ee/jedi-0.19.2-py2.py3-none-any.whl", hash = "sha256:a8ef22bde8490f57fe5c7681a3c83cb58874daf72b4784de3cce5b6ef6edb5b9", size = 1572278 },
 ]
 
 [[package]]
@@ -2571,6 +2571,17 @@ wheels = [
 ]
 
 [[package]]
+name = "pcmsoanalystflow"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "crewai", extra = ["tools"] },
+]
+
+[package.metadata]
+requires-dist = [{ name = "crewai", extras = ["tools"], specifier = ">=0.79.4,<1.0.0" }]
+
+[[package]]
 name = "pexpect"
 version = "4.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2581,17 +2592,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/42/92/cc564bf6381ff43ce
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9e/c3/059298687310d527a58bb01f3b1965787ee3b40dce76752eda8b44e9a2c5/pexpect-4.9.0-py2.py3-none-any.whl", hash = "sha256:7236d1e080e4936be2dc3e326cec0af72acf9212a7e1d060210e70a47e253523", size = 63772 },
 ]
-
-[[package]]
-name = "pgranalystflow"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "crewai", extra = ["tools"] },
-]
-
-[package.metadata]
-requires-dist = [{ name = "crewai", extras = ["tools"], specifier = ">=0.76.9,<1.0.0" }]
 
 [[package]]
 name = "pluggy"
@@ -4210,9 +4210,9 @@ wheels = [
 
 [[package]]
 name = "zipp"
-version = "3.20.2"
+version = "3.21.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/54/bf/5c0000c44ebc80123ecbdddba1f5dcd94a5ada602a9c225d84b5aaa55e86/zipp-3.20.2.tar.gz", hash = "sha256:bc9eb26f4506fda01b81bcde0ca78103b6e62f991b381fec825435c836edbc29", size = 24199 }
+sdist = { url = "https://files.pythonhosted.org/packages/3f/50/bad581df71744867e9468ebd0bcd6505de3b275e06f202c2cb016e3ff56f/zipp-3.21.0.tar.gz", hash = "sha256:2c9958f6430a2040341a52eb608ed6dd93ef4392e02ffe219417c1b28b5dd1f4", size = 24545 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/62/8b/5ba542fa83c90e09eac972fc9baca7a88e7e7ca4b221a89251954019308b/zipp-3.20.2-py3-none-any.whl", hash = "sha256:a817ac80d6cf4b23bf7f2828b7cabf326f15a001bea8b1f9b49631780ba28350", size = 9200 },
+    { url = "https://files.pythonhosted.org/packages/b7/1a/7e4798e9339adc931158c9d69ecc34f5e6791489d469f5e50ec15e35f458/zipp-3.21.0-py3-none-any.whl", hash = "sha256:ac1bbe05fd2991f160ebce24ffbac5f6d11d83dc90891255885223d42b3cd931", size = 9630 },
 ]

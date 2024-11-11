@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 from pydantic import BaseModel, Field, RootModel
 from typing import Dict, Optional, List, Set, Tuple
+import asyncio
 from crewai import Flow
 from crewai.flow.flow import listen, start, and_, or_, router
 from .crews.gheanalystcrew.gheanalystcrew_crew import GheAnalystCrew
 from .crews.agentmodelcrew.agentmodelcrew_crew import AgentmodelcrewCrew
+from .crews.gheextractcrew.gheextractcrew_crew import GheextractcrewCrew
 #from .crews.writercrew.writercrew_crew import WritercrewCrew
 #from .crews.pgrorganizingcrew.pgrorganizingcrew_crew import PgrOrganizingCrew
 #from .crews.riskanalystcrew.riskanalystcrew_crew import RiskAnalystCrew
@@ -20,19 +22,33 @@ class PgrAnalystFlow(Flow):
 	@listen(LoadPdf)
 	def GheDetector(self):
 		gheanalystcrew = GheAnalystCrew()
-		ghes = gheanalystcrew.crew().kickoff()
+		ghes = gheanalystcrew.crew().kickoff(inputs={"query": "DESCRICAO DE ATIVIDADE"})
 		self.ghes = ghes
+		return ghes
 
 	@listen(GheDetector)
-	def ExtractAgents(self):
+	async def ExtractGhes(self):
+		results1 = []
+		for ghe1 in self.ghes["ghes"]:
+			ghe_extract = await (GheextractcrewCrew().crew().kickoff_async(inputs={"query": f"{ghe1} - DESCRICAO DE ATIVIDADE", "ghe": f"{ghe1} - DESCRICAO DE ATIVIDADE"}))
+			#ghe_extract = gheextractcrew.crew().kickoff_async(inputs={"query": f"{ghe1} – DESCRIÇÃO DE ATIVIDADE", "ghe": ghe1})
+			results1.append(f"{ghe_extract.raw}\n")
+			with open("output\\ghes.md", 'a', encoding='utf-8') as md:	
+				md.write(f"{ghe_extract.raw}\n\n")
+		self.pgr_ghe_extract = results1
+
+	@listen(GheDetector)
+	async def ExtractAgents(self):
 		results = []
 		for ghe in self.ghes["ghes"]:
-			pgragents = AgentmodelcrewCrew()
-			pgr_agent_result = pgragents.crew().kickoff(inputs={"ghe": ghe, "query": f"{ghe} - RECONHECIMENTO DOS RISCOS OCUPACIONAIS"})
+			pgr_agent_result = await (AgentmodelcrewCrew().crew().kickoff_async(inputs={"ghe": f"{ghe} - RECONHECIMENTO DOS RISCOS OCUPACIONAIS", "query": f"{ghe} - RECONHECIMENTO DOS RISCOS OCUPACIONAIS"}))
+			#pgr_agent_result = pgragents.crew().kickoff_async(inputs={"query": f"{ghe} – RECONHECIMENTO DOS RISCOS OCUPACIONAIS", "ghe": f"{ghe} – RECONHECIMENTO DOS RISCOS OCUPACIONAIS"})
 			results.append(f"{pgr_agent_result.raw}\n")
 			with open("output\\results.md", 'a', encoding='utf-8') as md:	
 				md.write(f"{pgr_agent_result.raw}\n\n")
 		self.pgr_agent_results = results
+		
+
 
 def kickoff():
     flow = PgrAnalystFlow()
