@@ -1,0 +1,50 @@
+jsonorganizer_task:
+  description: >
+    Você precisa estruturar dados recebidos em JSON, você receberá sempre duas variáveis, uma com as funções de um ghe e outra com os riscos do mesmo ghe,
+    sua função é juntar os dois e criar um JSON apenas, que indique TUDO que estava presente nas variáveis.
+    Funções: 
+    {ghe}
+
+    Riscos:
+    {agent}
+  expected_output: >
+    Preciso que você organize todos esses dados em JSON e que não falte nenhuma informação. Lembrando que esses dados precisam se conectar em um único JSON.
+    Exemplo de estruturação com informações fictícias, altere para as verdadeiras, não é necessário nada alem dos JSON organizados, não faça textos complementares nem sinalizações como ```json:
+    (
+        "ghe": "GHE 01",
+        "cargos": [
+            "função1, função2, função3",
+        ],
+        "setor": ["OPERACIONAL",],
+        "grupos": [
+            (
+                "nome": "(Físico, Químico, Ergonômico, Acidente)",
+                "riscos": [
+                    (
+                        "risco": "(Descrição do agente ou risco)1",
+                        "grau": "(Nível de risco ou classificação do risco)1"
+                    ),
+                    (
+                        "risco": "(Descrição do agente ou risco)2",
+                        "grau": "(Nível de risco ou classificação do risco)2"
+                    )
+                ]
+            ),
+            (
+                "nome": "(Físico, Químico, Ergonômico, Acidente)",
+                "riscos": [
+                    (
+                        "risco": "(Descrição do agente ou risco)3",
+                        "grau": "(Nível de risco ou classificação do risco)3"
+                    ),
+                    (
+                        "risco": "(Descrição do agente ou risco)4",
+                        "grau": "(Nível de risco ou classificação do risco)4"
+                    )
+                ]
+            )
+        ]
+    )
+  agent: JsonOrganizerAgent
+
+

@@ -9,7 +9,7 @@ class GheextractcrewCrew():
 	def GheExtractor(self) -> Agent:
 		return Agent(
 			config=self.agents_config['GheExtractor'],
-			tools=[SimplePDFSearchTool2(pdf_path="C:\\ian\\Trabalho\\PGR-MultiAgents\\pgranalystflow\\path\\pgr-brmed2.pdf")], 
+			tools=[SimplePDFSearchTool2(pdf_path="C:/Trabalho/PGR-MultiAgents/pgranalystflow/output/ghes.pdf")], 
 			verbose=True
 		)
 	
@@ -17,7 +17,6 @@ class GheextractcrewCrew():
 	def ghe_extractor_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['gheextractor_task'],
-			async_execution=True
 		)
 
 	@crew
@@ -30,4 +29,4 @@ class GheextractcrewCrew():
 		)
 	
 #pgragents = GheextractcrewCrew()
-#pgragents.crew().kickoff(inputs={"ghe": "GHE 03"})
+#pgragents.crew().kickoff(inputs={"ghe": "GHE 03 - DESCRICAO DE ATIVIDADE"})

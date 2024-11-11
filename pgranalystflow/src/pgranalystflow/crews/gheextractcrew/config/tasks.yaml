@@ -7,6 +7,12 @@ gheextractor_task:
     Retorne TODAS as funções (ou cargos) presentes no documento e associe eles ao {ghe}. Lembre também de extrair o nome do setor associado ao {ghe}.
     Cuidado sempre para pegar todoas as funções (ou cargos) presentes referentes ao {ghe}.
     É necessário apenas o {ghe}, o nome do setor e suas funções (ou cargos) associadas.
-    Exemplo de resposta:
-    {ghe} - (nome do setor) = [Função 01, Função 02, Função 03, Função 04, Função 05]
+    Preciso que seja estruturada a resposta em JSON, não é necessário nada além das informações em JSON, segue um exemplo de como deve ser estruturado:
+    (
+      "ghe": "{ghe}",
+      "setor": ["nome do setor",],
+      "cargos": [
+        "Função 01", "Função 02", "Função 03", "Função 04", "Função 05"
+      ]
+    )
   agent: GheExtractor

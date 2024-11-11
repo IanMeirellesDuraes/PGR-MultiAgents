@@ -16,7 +16,7 @@ class GheInfo(BaseModel):
 class GheAnalystCrew():
 	@agent
 	def GheDetector(self) -> Agent:
-		pdf_search_tool = SimplePDFSearchTool2(pdf_path="C:\\ian\\Trabalho\\PGR-MultiAgents\\pgranalystflow\\path\\pgr-brmed2.pdf")
+		pdf_search_tool = SimplePDFSearchTool2(pdf_path="C:\\Trabalho\\PGR-MultiAgents\\pgranalystflow\\path\\pgr-brmed1.pdf")
 		return Agent(
 			config=self.agents_config['GheDetector'],
 			tools=[pdf_search_tool],
@@ -26,7 +26,6 @@ class GheAnalystCrew():
 	def ghe_detector_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['ghedetector_task'],
-			output_file='output\\ghe.md',
 			output_pydantic=GheInfo,
 		)
 	

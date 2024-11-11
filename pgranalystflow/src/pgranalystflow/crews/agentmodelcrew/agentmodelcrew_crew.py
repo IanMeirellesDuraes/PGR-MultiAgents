@@ -10,7 +10,7 @@ class AgentmodelcrewCrew():
 	def AgentModel(self) -> Agent:
 		return Agent(
 			config=self.agents_config['AgentModel'],
-			tools=[SimplePDFSearchTool2(pdf_path="C:\\ian\\Trabalho\\PGR-MultiAgents\\pgranalystflow\\path\\pgr-brmed2.pdf")],
+			tools=[SimplePDFSearchTool2(pdf_path="C:/Trabalho/PGR-MultiAgents/pgranalystflow/output/risks.pdf")],
 			verbose=True,
 			cache = False
 		)
@@ -19,7 +19,6 @@ class AgentmodelcrewCrew():
 	def agent_pgr_model_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['agentpgrmodel_task'],
-			async_execution=True
 		)
 
 	@crew
