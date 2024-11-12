@@ -1,12 +1,8 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task, tool
-from pgranalystflow.tools.custom_tool import SimplePDFSearchTool
 from pgranalystflow.tools.custom_tool import SimplePDFSearchTool2
 from pydantic import BaseModel, Field, RootModel
 from typing import Dict, Optional, List, Set, Tuple
-
-#class GheInfo(BaseModel):
-	#ghes: Dict[str, list] = Field(..., default_factory=dict, description="Ghes encontrados no documento, onde a chave é o ghe correspondente e o valor é os cargos associados ao respectivo ghe")
 
 class GheInfo(BaseModel):
 	ghes: List[str] = Field(..., description="Lista de TODOS os GHE encontrados no pdf")
@@ -16,7 +12,7 @@ class GheInfo(BaseModel):
 class GheAnalystCrew():
 	@agent
 	def GheDetector(self) -> Agent:
-		pdf_search_tool = SimplePDFSearchTool2(pdf_path="C:\\Trabalho\\PGR-MultiAgents\\pgranalystflow\\path\\pgr-brmed1.pdf")
+		pdf_search_tool = SimplePDFSearchTool2()
 		return Agent(
 			config=self.agents_config['GheDetector'],
 			tools=[pdf_search_tool],

@@ -1,6 +1,5 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from src.pgranalystflow.tools.custom_tool import SimplePDFSearchTool
 from src.pgranalystflow.tools.custom_tool import SimplePDFSearchTool2
 
 @CrewBase
@@ -10,7 +9,7 @@ class AgentmodelcrewCrew():
 	def AgentModel(self) -> Agent:
 		return Agent(
 			config=self.agents_config['AgentModel'],
-			tools=[SimplePDFSearchTool2(pdf_path="C:/Trabalho/PGR-MultiAgents/pgranalystflow/output/risks.pdf")],
+			tools=[SimplePDFSearchTool2()],
 			verbose=True,
 			cache = False
 		)

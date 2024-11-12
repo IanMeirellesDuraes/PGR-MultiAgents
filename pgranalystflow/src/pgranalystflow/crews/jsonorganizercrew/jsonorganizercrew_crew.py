@@ -1,7 +1,5 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-#from crewai_tools import FileReadTool
-
 
 @CrewBase
 class JsonorganizercrewCrew():
@@ -10,7 +8,6 @@ class JsonorganizercrewCrew():
 	def JsonOrganizerAgent(self) -> Agent:
 		return Agent(
 			config=self.agents_config['JsonOrganizerAgent'],
-			#tools=[FileReadTool(file_path="C:/Trabalho/PGR-MultiAgents/pgranalystflow/output/structed.txt")],
 			verbose=True
 		)
 

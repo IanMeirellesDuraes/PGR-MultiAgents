@@ -1,6 +1,5 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from src.pgranalystflow.tools.custom_tool import SimplePDFSearchTool
 from src.pgranalystflow.tools.custom_tool import SimplePDFSearchTool2
 
 @CrewBase
@@ -9,7 +8,7 @@ class GheextractcrewCrew():
 	def GheExtractor(self) -> Agent:
 		return Agent(
 			config=self.agents_config['GheExtractor'],
-			tools=[SimplePDFSearchTool2(pdf_path="C:/Trabalho/PGR-MultiAgents/pgranalystflow/output/ghes.pdf")], 
+			tools=[SimplePDFSearchTool2()], 
 			verbose=True
 		)
 	
