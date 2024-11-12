@@ -3,14 +3,13 @@ agentpgrmodel_task:
     Lembre-se de organizar os dados de forma correta de acordo com o necessário para ter uma boa visão do documento analisado. O seu foco é o {ghe}
     Você precisa apresentar todos os tipos de agente (ou descrição do risco), todos os riscos (ou descrição do agente) associados a cada tipo de agente (ou descrição do risco) e também todos os niveis de risco (ou classificação do risco) para cada risco, viculados ao {ghe}
     O ou significa que os documentos podem seguir esses dois tipos de padrão, ou seja, pode ser que o documento tenha um padrão ou outro, ou ambos misturados.
-    Todas as páginas extraídas são correspondentes ao {ghe}, ou seja, tudo que estiver nas páginas correspondem ao ghe que você está analisando.
+    Todas as páginas extraídas são correspondentes ao {ghe}, ou seja, extraia tudo que esta nas páginas correspondentes pois elas terão informações necessárias.
   expected_output: >
     Tome cuidado com informações incompletas ou inventadas. É necessário que todos os dados sejam extraídos do documento.
-    Todas as páginas extraídas são correspondentes ao {ghe}, ou seja, tudo que estiver nas páginas correspondem ao ghe que você está analisando.
-    Extraia todos os tópicos encontrados nas páginas, pois eles são as informçãoes que você precisa extrair. Não deixe nada de fora, tudo que estiver sendo citado que se encaixe nos padrões solicitados, deve ser extraído e alocado corretamente.
+    Todas as páginas extraídas são correspondentes ao {ghe}, ou seja, TUDO que estiver nas páginas correspondem ao ghe que você está analisando.
+    Extraia todos os tópicos encontrados nas páginas, pois eles são as informçãoes que você precisa extrair. Não deixe nada de fora, tudo que estiver sendo citado que se encaixe nos padrões solicitados, deve ser extraído e alocado corretamente no {ghe}
     Cuidado com o tipo de agente ou descrição do risco, eles sempre serão ou Físico ou Ergonômico ou Químico ou Acidente, NÃO pode confundir QUÍMICO COM FÍSICO, por exemplo.
     Sempre que for encontrado uma descrição de agente ou risco benzeno, deve ser alocado juntamente com Tolueno, Xileno e Etilbenzeno, pois são agentes químicos que estão sempre juntos.
-    Extraia tudo até que haja outro GHE informado que não seja o {ghe}.
     Exemplo de resposta com informações fictícias, altere para os dados reais e não escreva nada além das informações extraidas, textos no final da análise não são necessários. Faça em estrutura de JSON:
       "{ghe} = [
         "(Físico ou Ergonômico ou Químico ou Acidente): [
