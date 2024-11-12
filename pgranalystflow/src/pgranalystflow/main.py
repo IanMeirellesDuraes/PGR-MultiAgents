@@ -42,19 +42,26 @@ class PgrAnalystFlow(Flow):
 		
 	@listen(LoadPdf)
 	def CreatePDFRisk(self):
-		c = canvas.Canvas("output/risks.pdf", pagesize=A4)
+		c = canvas.Canvas("path/risks.pdf", pagesize=A4)
 		largura, altura = A4
-		margem_y = altura - 50 
+		margem_y = altura - 50
 		margem_x = 50
 		margem_inferior = 50
 		largura_max = largura - 2 * margem_x
 		c.setFont("Helvetica", 10)
-		linhas = self.pdf_risks.split('\n')
+		linhas = self.pdf_risks.split("\n")
+		primeira_pagina = True
 		for linha in linhas:
+			if linha.startswith("Página"):
+				if not primeira_pagina:  
+					c.showPage()
+					c.setFont("Helvetica", 10)
+				primeira_pagina = False  
+				margem_y = altura - 50 
 			while stringWidth(linha, "Helvetica", 10) > largura_max:
 				for i in range(len(linha), 0, -1):
 					if stringWidth(linha[:i], "Helvetica", 10) <= largura_max:
-						if margem_y < margem_inferior:  
+						if margem_y < margem_inferior:
 							c.showPage()
 							c.setFont("Helvetica", 10)
 							margem_y = altura - 50
@@ -62,30 +69,37 @@ class PgrAnalystFlow(Flow):
 						linha = linha[i:].strip()
 						margem_y -= 15
 						break
-			if margem_y < margem_inferior:  
+			if margem_y < margem_inferior:
 				c.showPage()
 				c.setFont("Helvetica", 10)
 				margem_y = altura - 50
 			c.drawString(margem_x, margem_y, linha)
 			margem_y -= 15
 		c.save()
-		print("PDF criado com sucesso!")
-	
+		print("PDF de riscos criado com sucesso!")
+
 	@listen(LoadPdf)
 	def CreatePDFGhes(self):
-		c = canvas.Canvas("output/ghes.pdf", pagesize=A4)
+		c = canvas.Canvas("path/ghes.pdf", pagesize=A4)
 		largura, altura = A4
-		margem_y = altura - 50 
+		margem_y = altura - 50
 		margem_x = 50
 		margem_inferior = 50
 		largura_max = largura - 2 * margem_x
 		c.setFont("Helvetica", 10)
-		linhas = self.pdf_ghe.split('\n')
+		linhas = self.pdf_ghe.split("\n")
+		primeira_pagina = True
 		for linha in linhas:
+			if linha.startswith("Página"):
+				if not primeira_pagina:  
+					c.showPage()
+					c.setFont("Helvetica", 10)
+				primeira_pagina = False  
+				margem_y = altura - 50 
 			while stringWidth(linha, "Helvetica", 10) > largura_max:
 				for i in range(len(linha), 0, -1):
 					if stringWidth(linha[:i], "Helvetica", 10) <= largura_max:
-						if margem_y < margem_inferior:  
+						if margem_y < margem_inferior:
 							c.showPage()
 							c.setFont("Helvetica", 10)
 							margem_y = altura - 50
@@ -93,14 +107,14 @@ class PgrAnalystFlow(Flow):
 						linha = linha[i:].strip()
 						margem_y -= 15
 						break
-			if margem_y < margem_inferior:  
+			if margem_y < margem_inferior:
 				c.showPage()
 				c.setFont("Helvetica", 10)
 				margem_y = altura - 50
 			c.drawString(margem_x, margem_y, linha)
 			margem_y -= 15
 		c.save()
-		print("PDF criado com sucesso!")
+		print("PDF de ghes criado com sucesso!")
 	
 	@listen(and_(CreatePDFRisk, CreatePDFGhes))
 	def CrewTrigger(self):
@@ -121,8 +135,8 @@ class PgrAnalystFlow(Flow):
 		results = []
 		self.jsonlist = []
 		for ghe in self.ghes["ghes"]:
-			ghe_extract = await GheextractcrewCrew(pdf_path="output/ghes.pdf").crew().kickoff_async(inputs={"query": f"{ghe}", "ghe": f"{ghe}"})
-			pgr_agent_result = await AgentmodelcrewCrew(pdf_path="output/risks.pdf").crew().kickoff_async(inputs={"ghe": f"{ghe}", "query": f"{ghe}"})
+			ghe_extract = await GheextractcrewCrew(pdf_path="path/ghes.pdf").crew().kickoff_async(inputs={"query": f"{ghe}", "ghe": f"{ghe}"})
+			pgr_agent_result = await AgentmodelcrewCrew(pdf_path="path/risks.pdf").crew().kickoff_async(inputs={"ghe": f"{ghe}", "query": f"{ghe}"})
 			json_organizer = await JsonorganizercrewCrew().crew().kickoff_async(inputs={"ghe": f"{ghe_extract.raw}", "agent": f"{pgr_agent_result.raw}"})
 			results.append(f"{json_organizer}\n")
 			with open("output/results.txt", 'a', encoding='utf-8') as md:	
