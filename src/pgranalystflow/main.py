@@ -8,12 +8,11 @@ from reportlab.pdfbase.pdfmetrics import stringWidth
 
 from crewai import Flow
 from crewai.flow.flow import listen, start, and_, router
-from .crews.gheanalystcrew.gheanalystcrew_crew import GheAnalystCrew
-from .crews.agentmodelcrew.agentmodelcrew_crew import AgentmodelcrewCrew
-from .crews.gheextractcrew.gheextractcrew_crew import GheextractcrewCrew
-from .crews.jsonorganizercrew.jsonorganizercrew_crew import JsonorganizercrewCrew
-from src.pgranalystflow.tools.custom_tool import SimplePDFSearchTool2
-
+from crews.gheanalystcrew.gheanalystcrew_crew import GheAnalystCrew
+from crews.agentmodelcrew.agentmodelcrew_crew import AgentmodelcrewCrew
+from crews.gheextractcrew.gheextractcrew_crew import GheextractcrewCrew
+from crews.jsonorganizercrew.jsonorganizercrew_crew import JsonorganizercrewCrew
+from tools.custom_tool import SimplePDFSearchTool2
 
 class PgrAnalystFlow(Flow):
     def __init__(
@@ -43,7 +42,6 @@ class PgrAnalystFlow(Flow):
         tool = SimplePDFSearchTool2(pdf_path=self.pdf_path)
         self.pdf_ghe = tool._run(query="DESCRICAO DE ATIVIDADE")
         self.pdf_risks = tool._run(query="RECONHECIMENTO DOS RISCOS OCUPACIONAIS")
-        print(self.pdf_path)
 
     @listen(LoadPdf)
     def CreatePDFRisk(self):
@@ -55,7 +53,14 @@ class PgrAnalystFlow(Flow):
         largura_max = largura - 2 * margem_x
         c.setFont("Helvetica", 10)
         linhas = self.pdf_risks.split("\n")
+        primeira_pagina = True
         for linha in linhas:
+            if linha.startswith("Página"):
+                if not primeira_pagina:  
+                    c.showPage()
+                    c.setFont("Helvetica", 10)
+                primeira_pagina = False  
+                margem_y = altura - 50 
             while stringWidth(linha, "Helvetica", 10) > largura_max:
                 for i in range(len(linha), 0, -1):
                     if stringWidth(linha[:i], "Helvetica", 10) <= largura_max:
@@ -74,7 +79,7 @@ class PgrAnalystFlow(Flow):
             c.drawString(margem_x, margem_y, linha)
             margem_y -= 15
         c.save()
-        print("PDF criado com sucesso!")
+        print("PDF de riscos criado com sucesso!")
 
     @listen(LoadPdf)
     def CreatePDFGhes(self):
@@ -86,7 +91,14 @@ class PgrAnalystFlow(Flow):
         largura_max = largura - 2 * margem_x
         c.setFont("Helvetica", 10)
         linhas = self.pdf_ghe.split("\n")
+        primeira_pagina = True
         for linha in linhas:
+            if linha.startswith("Página"):
+                if not primeira_pagina:  
+                    c.showPage()
+                    c.setFont("Helvetica", 10)
+                primeira_pagina = False  
+                margem_y = altura - 50 
             while stringWidth(linha, "Helvetica", 10) > largura_max:
                 for i in range(len(linha), 0, -1):
                     if stringWidth(linha[:i], "Helvetica", 10) <= largura_max:
@@ -105,7 +117,7 @@ class PgrAnalystFlow(Flow):
             c.drawString(margem_x, margem_y, linha)
             margem_y -= 15
         c.save()
-        print("PDF criado com sucesso!")
+        print("PDF de ghes criado com sucesso!")
 
     @listen(and_(CreatePDFRisk, CreatePDFGhes))
     def CrewTrigger(self):
@@ -163,7 +175,7 @@ class PgrAnalystFlow(Flow):
 
 
 def kickoff():
-    flow = PgrAnalystFlow()
+    flow = PgrAnalystFlow(pdf_path="tmp/pgr-brmed2.pdf", key="pgr-brmed2", on_success=lambda x: print(x))
     flow.kickoff()
 
 
@@ -174,47 +186,3 @@ def plot():
 
 if __name__ == "__main__":
     kickoff()
-
-
-# @listen(LoadPdf)
-# def RiskDescription(self):
-# riskanalystcrew = RiskAnalystCrew()
-# risk_analysis = riskanalystcrew.crew().kickoff()
-# self.risk_analysis = risk_analysis
-
-# @listen(and_(GheDetector, RiskDescription))
-# def VisionReview(self):
-# visionanalystcrew = VisionAnalystCrew()
-# vision_analysis = visionanalystcrew.crew().kickoff(inputs={image_path_url: f"C:\Trabalho\PGR-MultiAgents\pgr_analyst\imgs\pgr\pagina_{self.ghes}.png"})
-
-# @listen(and_(GheDetector, RiskDescription))
-# def PgrDescription(self):
-# pgrorganizingcrew = PgrOrganizingCrew()
-# pgr_structure = pgrorganizingcrew.crew().kickoff()
-# print(pgr_structure)
-
-# @listen(PgrDescription)
-# def VisionReview(self):
-# visionanalystcrew = VisioncrewCrew()
-# vision_analysis = visionanalystcrew.crew().kickoff(inputs={"image_path_url": f"C:\Trabalho\PGR-MultiAgents\pgranalystflow\path\pagina_135.png"})
-
-
-# @listen(GheDetector)
-# async def ExtractAgents(self):
-# results = []
-# self.jsonlist = []
-# for ghe in self.ghes["ghes"]:
-# pgr_agent_result = await (AgentmodelcrewCrew().crew().kickoff_async(inputs={"ghe": f"{ghe} - RECONHECIMENTO DOS RISCOS OCUPACIONAIS", "query": f"{ghe} - RECONHECIMENTO DOS RISCOS OCUPACIONAIS"}))
-# results.append(f"{pgr_agent_result.raw}\n")
-# with open("output/results.txt", 'a', encoding='utf-8') as md:
-# md.write(f"{pgr_agent_result.raw}\n\n")
-
-
-# self.pgr_agent_results = results
-
-# @listen(and_(ExtractGhes, ExtractAgents))
-# def JsonOrganizer(self):
-# jsonorganizercrew = JsonorganizercrewCrew()
-# json_organizer = jsonorganizercrew.crew().kickoff()
-# with open("output/saida.json", 'a', encoding='utf-8') as md:
-# md.write(f"{json_organizer}\n")
