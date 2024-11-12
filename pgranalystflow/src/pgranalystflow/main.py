@@ -145,10 +145,12 @@ class PgrAnalystFlow(Flow):
 		random_id = secrets.token_hex(3)
 		with open(f"output/resposta-{random_id}.json", 'w', encoding='utf-8') as md:	
 			md.write(f"{resultado_formatado}")
-		return print(resultado_formatado)
+		return {
+			"data": [resultado_formatado]
+		}
 		
 def kickoff():
-    flow = PgrAnalystFlow()
+    flow = PgrAnalystFlow(pdf_url="C:\Trabalho\PGR-MultiAgents\pgranalystflow\path\pgr-brmed2.pdf")
     flow.kickoff()
 
 
@@ -159,52 +161,3 @@ def plot():
 
 if __name__ == "__main__":
     kickoff()
-
-
-
-
-	#@listen(LoadPdf)
-	#def RiskDescription(self):
-		#riskanalystcrew = RiskAnalystCrew()
-		#risk_analysis = riskanalystcrew.crew().kickoff()
-		#self.risk_analysis = risk_analysis
-	
-	#@listen(and_(GheDetector, RiskDescription))
-	#def VisionReview(self):
-		#visionanalystcrew = VisionAnalystCrew()
-		#vision_analysis = visionanalystcrew.crew().kickoff(inputs={image_path_url: f"C:\Trabalho\PGR-MultiAgents\pgr_analyst\imgs\pgr\pagina_{self.ghes}.png"})
-	
-	#@listen(and_(GheDetector, RiskDescription))
-	#def PgrDescription(self):
-		#pgrorganizingcrew = PgrOrganizingCrew()
-		#pgr_structure = pgrorganizingcrew.crew().kickoff()
-		#print(pgr_structure)
-
-	#@listen(PgrDescription)
-	#def VisionReview(self):
-		#visionanalystcrew = VisioncrewCrew()
-		#vision_analysis = visionanalystcrew.crew().kickoff(inputs={"image_path_url": f"C:\Trabalho\PGR-MultiAgents\pgranalystflow\path\pagina_135.png"})
-
-
-
-
-
-#@listen(GheDetector)
-	#async def ExtractAgents(self):
-		#results = []
-		#self.jsonlist = []
-		#for ghe in self.ghes["ghes"]:
-			#pgr_agent_result = await (AgentmodelcrewCrew().crew().kickoff_async(inputs={"ghe": f"{ghe} - RECONHECIMENTO DOS RISCOS OCUPACIONAIS", "query": f"{ghe} - RECONHECIMENTO DOS RISCOS OCUPACIONAIS"}))
-			#results.append(f"{pgr_agent_result.raw}\n")
-			#with open("output/results.txt", 'a', encoding='utf-8') as md:	
-				#md.write(f"{pgr_agent_result.raw}\n\n")
-			
-			
-		#self.pgr_agent_results = results
-	
-	#@listen(and_(ExtractGhes, ExtractAgents))
-	#def JsonOrganizer(self):
-		#jsonorganizercrew = JsonorganizercrewCrew()
-		#json_organizer = jsonorganizercrew.crew().kickoff()
-		#with open("output/saida.json", 'a', encoding='utf-8') as md:	
-			#md.write(f"{json_organizer}\n")
