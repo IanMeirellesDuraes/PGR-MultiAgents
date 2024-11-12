@@ -1,12 +1,12 @@
 gheextractor_task:
   description: >
-    Analise o pdf recebido de um docuemnto PGR e identifique todas as funções (ou cargos) e o nome do setor, associadas ao GHE (Grupo Homogêneo de Exposição) {ghe}.
+    Analise o pdf recebido de um docuemnto PGR e identifique todas as funções (ou cargos) e o nome completo do setor, associadas ao {ghe}.
     Lembrando que cada função (ou cargo) está associada ao GHE informado nas páginas extraidas do documento que no caso é o {ghe}.
     Cuidado com a formatação do PDF pois haverá troca de páginas no documento que causa a quebra de seções.
   expected_output: >
-    Retorne TODAS as funções (ou cargos) presentes no documento e associe eles ao {ghe}. Lembre também de extrair o nome do setor associado ao {ghe}.
+    Retorne TODAS as funções (ou cargos) presentes no documento e associe eles ao {ghe}. Lembre também de extrair o nome completo do setor associado ao {ghe}.
     Cuidado sempre para pegar todoas as funções (ou cargos) presentes referentes ao {ghe}.
-    É necessário apenas o {ghe}, o nome do setor e suas funções (ou cargos) associadas.
+    É necessário apenas o {ghe}, o nome completo do setor e suas funções (ou cargos) associadas.
     Preciso que seja estruturada a resposta em JSON, não é necessário nada além das informações em JSON, segue um exemplo de como deve ser estruturado:
     (
       "ghe": "{ghe}",
