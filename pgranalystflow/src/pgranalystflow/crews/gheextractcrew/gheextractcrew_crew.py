@@ -4,11 +4,16 @@ from src.pgranalystflow.tools.custom_tool import SimplePDFSearchTool2
 
 @CrewBase
 class GheextractcrewCrew():
+
+	def __init__(self, pdf_path: str):
+		self.pdf_path = pdf_path
+
 	@agent
 	def GheExtractor(self) -> Agent:
+		simple_pdf_tool = SimplePDFSearchTool2(pdf_path=self.pdf_path)
 		return Agent(
 			config=self.agents_config['GheExtractor'],
-			tools=[SimplePDFSearchTool2()], 
+			tools=[simple_pdf_tool], 
 			verbose=True
 		)
 	

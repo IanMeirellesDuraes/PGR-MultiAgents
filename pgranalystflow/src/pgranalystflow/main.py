@@ -17,11 +17,12 @@ from .crews.jsonorganizercrew.jsonorganizercrew_crew import JsonorganizercrewCre
 from src.pgranalystflow.tools.custom_tool import SimplePDFSearchTool2
 
 class PgrAnalystFlow(Flow):
-
+	
 	def __init__(self, pdf_url: str):
-		self.pdf_path = pdf_url
+		super().__init__()
+		self.pdf_url = pdf_url
+		
 
-	#@app.post("/pgranalyst/") req: Inputs
 	@start()
 	def ResetFlow(self):
 		import os
@@ -32,12 +33,15 @@ class PgrAnalystFlow(Flow):
 	
 	@listen(ResetFlow)
 	def LoadPdf(self):
-		tool = SimplePDFSearchTool2(pdf_path="path/pgr-brmed1.pdf")
+		tool = SimplePDFSearchTool2(pdf_path=self.pdf_url)
 		self.pdf_ghe = tool._run(query="DESCRICAO DE ATIVIDADE")
 		self.pdf_risks = tool._run(query="RECONHECIMENTO DOS RISCOS OCUPACIONAIS")
+		print(self.pdf_url)
+		print(self.pdf_url)
+		print(self.pdf_url)
 		
 	@listen(LoadPdf)
-	async def CreatePDFRisk(self):
+	def CreatePDFRisk(self):
 		c = canvas.Canvas("output/risks.pdf", pagesize=A4)
 		largura, altura = A4
 		margem_y = altura - 50 
@@ -68,7 +72,7 @@ class PgrAnalystFlow(Flow):
 		print("PDF criado com sucesso!")
 	
 	@listen(LoadPdf)
-	async def CreatePDFGhes(self):
+	def CreatePDFGhes(self):
 		c = canvas.Canvas("output/ghes.pdf", pagesize=A4)
 		largura, altura = A4
 		margem_y = altura - 50 
@@ -104,22 +108,22 @@ class PgrAnalystFlow(Flow):
 
 	@router(CrewTrigger)
 	def GheDetector(self):
-		gheanalystcrew = GheAnalystCrew()
-		ghes = gheanalystcrew.crew().kickoff(pdf_path="path/pgr-brmed1.pdf", inputs={"query": "DESCRICAO DE ATIVIDADE"})
+		gheanalystcrew = GheAnalystCrew(pdf_path=self.pdf_url)
+		ghes = gheanalystcrew.crew().kickoff(inputs={"query": "DESCRICAO DE ATIVIDADE"})
 		self.ghes = ghes
-		if ghes[0]:
+		if ghes["ghes"] != []:
 			return "Ghes detected!"
 		else:
 			return "No Ghes detected!"
 
 	@listen("Ghes detected!")
-	def ExtractGhes(self):
+	async def ExtractGhes(self):
 		results = []
 		self.jsonlist = []
 		for ghe in self.ghes["ghes"]:
-			ghe_extract = GheextractcrewCrew().crew().kickoff(pdf_path="path/pgr-brmed1.pdf", inputs={"query": f"{ghe}", "ghe": f"{ghe}"})
-			pgr_agent_result = AgentmodelcrewCrew().crew().kickoff(pdf_path="path/pgr-brmed1.pdf", inputs={"ghe": f"{ghe}", "query": f"{ghe}"})
-			json_organizer = JsonorganizercrewCrew().crew().kickoff(inputs={"ghe": f"{ghe_extract.raw}", "agent": f"{pgr_agent_result.raw}"})
+			ghe_extract = await GheextractcrewCrew(pdf_path="output/ghes.pdf").crew().kickoff_async(inputs={"query": f"{ghe}", "ghe": f"{ghe}"})
+			pgr_agent_result = await AgentmodelcrewCrew(pdf_path="output/risks.pdf").crew().kickoff_async(inputs={"ghe": f"{ghe}", "query": f"{ghe}"})
+			json_organizer = await JsonorganizercrewCrew().crew().kickoff_async(inputs={"ghe": f"{ghe_extract.raw}", "agent": f"{pgr_agent_result.raw}"})
 			results.append(f"{json_organizer}\n")
 			with open("output/results.txt", 'a', encoding='utf-8') as md:	
 				md.write(f"{ghe_extract.raw}\n\n")

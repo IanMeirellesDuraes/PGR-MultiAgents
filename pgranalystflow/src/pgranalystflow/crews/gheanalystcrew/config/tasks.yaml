@@ -5,8 +5,9 @@ ghedetector_task:
     Utilize a {query} para retornar a lista de GHEs encontrados.
     Cuidado com a formatação do PDF pois haverá troca de páginas no documento que causa a quebra de seções.
   expected_output: >
-    Retorne TODOS os GHEs encontrados no documento. Utilize a {query} para retornar a lista de GHEs encontrados.
+    Retorne TODOS os GHEs encontrados no pdf. Utilize a {query} para retornar a lista de GHEs encontrados.
     Cuidado sempre para pegar todos os grupos presentes referentes a GHE, Grupo de cargos Homogêneos de Exposição.
+    Caso não haja correspondência, retorne uma lista vazia.
     Caso não tenha encontrado nenhum GHE, retorne uma lista vazia.
     É necessário apenas do GHE e seu número.
     Exemplo de resposta:

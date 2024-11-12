@@ -7,15 +7,18 @@ from typing import Dict, Optional, List, Set, Tuple
 class GheInfo(BaseModel):
 	ghes: List[str] = Field(..., description="Lista de TODOS os GHE encontrados no pdf")
 
-
 @CrewBase
 class GheAnalystCrew():
+	
+	def __init__(self, pdf_path: str):
+		self.pdf_path = pdf_path
+
 	@agent
 	def GheDetector(self) -> Agent:
-		pdf_search_tool = SimplePDFSearchTool2()
+		simple_pdf_tool = SimplePDFSearchTool2(pdf_path=self.pdf_path)
 		return Agent(
 			config=self.agents_config['GheDetector'],
-			tools=[pdf_search_tool],
+			tools=[simple_pdf_tool],
 		)
 
 	@task
