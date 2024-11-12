@@ -1,0 +1,6 @@
+crewai==0.76.9
+crewai-tools==0.13.4
+uvicorn==0.32.0
+reportlab==4.2.5
+PyPDF2==3.0.1
+fastapi[standard]

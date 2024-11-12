@@ -1,6 +1,6 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task, tool
-from pgranalystflow.tools.custom_tool import SimplePDFSearchTool2
+from src.pgranalystflow.tools.custom_tool import SimplePDFSearchTool2
 from pydantic import BaseModel, Field, RootModel
 from typing import Dict, Optional, List, Set, Tuple
 
