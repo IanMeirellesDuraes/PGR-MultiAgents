@@ -5,14 +5,10 @@ import pdfplumber
 
 from crewai.flow.flow import Flow, listen, start
 
-from .crews.agentmodelcrew.agentmodelcrew_crew import AgentmodelcrewCrew
-from .crews.examextractcrew.examextractcrew_crew import ExamextractcrewCrew
-from .crews.gheextractcrew.gheextractcrew_crew import GheextractcrewCrew
-from .tools.custom_tool import SimplePDFSearchTool2
-
-class PoemState(BaseModel):
-    sentence_count: int = 1
-    poem: str = ""
+from crews.agentmodelcrew.agentmodelcrew_crew import AgentmodelcrewCrew
+from crews.examextractcrew.examextractcrew_crew import ExamextractcrewCrew
+from crews.gheextractcrew.gheextractcrew_crew import GheextractcrewCrew
+from tools.custom_tool import SimplePDFSearchTool2
 
 class PcmsoAnalyst(Flow):
 
@@ -21,7 +17,7 @@ class PcmsoAnalyst(Flow):
         texto = ""
         with pdfplumber.open("path/pcmso-brmed2.pdf") as pdf:
             for pagina in pdf.pages:
-                texto += pagina.extract_text()  # Extrai o texto de cada página
+                texto += pagina.extract_text() 
         self.pdf_text = texto
         
     @listen(LoadPDF)
@@ -40,9 +36,14 @@ class PcmsoAnalyst(Flow):
             resultado[ghe_atual] = self.pdf_text[inicio:fim]
         seções = resultado
 
-        for ghe, texto, i in seções.items():
-            with open(f"output/seção_{ghe}.txt", "w") as arquivo:
+        for ghe, texto in seções.items():
+            with open(f"output/seção_{ghe}.txt", "w", encoding='utf-8') as arquivo:
                 arquivo.write(f"Seção {ghe}:\n{texto}\n")
+
+    @listen(FilterGhes)
+    def ExtractGhes(self):
+        gheextractcrew = GheextractcrewCrew()
+        
 
 
 

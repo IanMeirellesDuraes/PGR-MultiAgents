@@ -1,6 +1,6 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from ...tools.custom_tool import SimplePDFSearchTool2
+from tools.custom_tool import SimplePDFSearchTool2
 
 @CrewBase
 class AgentmodelcrewCrew():
