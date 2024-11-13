@@ -3,7 +3,7 @@ from crewai.project import CrewBase, agent, crew, task
 from ...tools.custom_tool import SimplePDFSearchTool2
 
 @CrewBase
-class GheextractcrewCrew():
+class ExamextractcrewCrew():
 	@agent
 	def GheExtractor(self) -> Agent:
 		return Agent(

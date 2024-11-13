@@ -41,11 +41,14 @@ class SimplePDFSearchToolSchema(BaseModel):
     query: str = Field(
         ..., description="A consulta obrigatória que você quer usar para pesquisar o conteúdo do PDF"
     )
+    pdf_path: Optional[str] = Field(
+        None, description="O caminho para o arquivo PDF que será pesquisado (opcional)"
+    )
 
 class SimplePDFSearchTool2(BaseTool):
     name: str = "Simple PDF Search Tool"
     description: str = "Busca por termos específicos em um documento PDF e extrai o texto que contém esses termos."
-    pdf_path: str = Field(..., description="O caminho para o arquivo PDF que será pesquisado")  
+    #pdf_path: str = Field(..., description="O caminho para o arquivo PDF que será pesquisado")  
     args_schema: Type[BaseModel] = SimplePDFSearchToolSchema
 
     def _normalize_text(self, text: str) -> str:
@@ -60,12 +63,14 @@ class SimplePDFSearchTool2(BaseTool):
                 text = text.replace(f"GHE {numero}-", f"GHE {numero} -")
         return text
 
-    def _run(self, query: str, **kwargs: Any) -> str:
+    def _run(self, query: str, pdf_path: Optional[str] = None, **kwargs: Any) -> str:
         results = []
         query = self._normalize_text(query)
+        if pdf_path is None:
+            pdf_path = self.pdf_path
         try:
-            print(f"Searching for '{query}' in '{self.pdf_path}'...")
-            with open(self.pdf_path, 'rb') as file:
+            print(f"Searching for '{query}' in '{pdf_path}'...")
+            with open(pdf_path, 'rb') as file:
                 reader = PyPDF2.PdfReader(file)
                 for page_number, page in enumerate(reader.pages):
                     text = page.extract_text()
